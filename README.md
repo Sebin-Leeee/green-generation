@@ -1,4 +1,4 @@
-## Desciption
+## Description
 Sustainability App
 
 ## Team
