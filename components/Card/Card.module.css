@@ -1,0 +1,10 @@
+.circle{
+    width:30px;
+    height: 30px;
+    background:black;
+}
+.circle__green{
+    width:30px;
+    height: 30px;
+    background:green;
+}
