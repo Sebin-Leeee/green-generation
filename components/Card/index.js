@@ -1,5 +1,5 @@
 import styles from "@/components/Card/Card.module.css";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 export default function Card({
   cardIndex,
   cardAnswer,
@@ -16,15 +16,24 @@ export default function Card({
   };
 
   return (
-    <li>
-      <button onClick={handleClick}>
-        {cardIndex === selectedAnswerIndex ? (
-          <button className={styles.circle} />
-        ) : (
-          <button className={styles.circle__green} />
-        )}
-        {cardAnswer.text}
-      </button>
+    <li className={styles.list}>
+      <div onClick={handleClick} className={styles.itemContainer} >
+        <div  >
+          {cardIndex === selectedAnswerIndex ? (
+            <button className={styles.circle__green} />
+          ) : (
+            <button className={styles.circle} />
+          )}
+        </div>
+        <div>
+          {cardIndex === selectedAnswerIndex ? (
+            <div className={styles.btn__thicker}><span>{cardAnswer.text}</span></div>
+          ) : (
+            <div className={styles.btn__box}><span>{cardAnswer.text}</span></div>
+          )}
+        </div>
+      </div>
+
     </li>
   );
 }

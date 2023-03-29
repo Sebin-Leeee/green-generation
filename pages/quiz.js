@@ -1,32 +1,48 @@
-
 import { quizList } from "@/data/quizList";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Answer from "@/components/Answer";
 import Results from "@/components/Results";
-
+import styles from '@/styles/Quiz.module.css'
 
 export default function Quiz() {
-    const [score, setScore] = useState(0);
+  const [score, setScore] = useState(0);
+  const [submitted, setSubmitted] = useState(false);
+  const [quizStarted, setQuizStarted] = useState(false);
+  const [currentQuestion, setCurrentQuestion] = useState(1);
 
-    const quizSubmit = (score) => {
-        setScore(score);
-    }
+  const quizSubmit = (score) => {
+    setScore(score);
+    setSubmitted(true);
+  };
 
-    let resultsPage;
+  const handleRestart = () => {
+    setScore(0);
+    setCurrentQuestion(1);
+    setSubmitted(false);
+    setQuizStarted(true);
+  };
 
-    if (score < 5) {
-      resultsPage = <Results />;
-    } else if (score >= 5 && score < 8) {
-      resultsPage = <Results/>;
-    } else {
-      resultsPage = <Results />;
-    }
+  const handleStart = () => {
+    setQuizStarted(true);
+  };
 
-    return (
-        <>
-           <Answer onSubmit={quizSubmit}/>
-           <Results/>
-        </>
+  return (
+    <>
+      {!quizStarted && <button onClick={handleStart}>Start Now</button>}
 
-    );
+      {quizStarted && !submitted && (
+        <Answer
+          onSubmit={quizSubmit}
+          currentQuestion={currentQuestion}
+          setCurrentQuestion={setCurrentQuestion}
+          questions={quizList}
+        />
+      )}
+
+      {submitted && <Results resultScore={score} />}
+      {submitted && (
+        <button onClick={() => handleRestart()}>Restart</button>
+      )}
+    </>
+  );
 }

@@ -1,0 +1,11 @@
+.ul{
+    margin: 0;
+    padding: 0;
+}
+
+.listContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
