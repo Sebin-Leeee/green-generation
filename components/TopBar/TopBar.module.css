@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--color--white-back);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.logo_text{
+    font-family: var(--font-logo);
+    font-size: 22px;
+}
