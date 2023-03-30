@@ -3,6 +3,7 @@
   --font-mono: 'Sofia Sans', sans-serif;
   --font-logo: 'Righteous', cursive;
   --color--green:#abcd9c;
+  --color--frog-green: #7FA346;
   --color--olive:#343633;
   --color--orange:#f7934c;
   --color--blue:#5aa9e6;
@@ -44,8 +45,15 @@ a {
   text-decoration: none;
 }
 
+h2{
+  font-size: 22pt;
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
 p{
   font-size: 17px;
+  font-family: var(--font-mono)
 }
 
 @media (prefers-color-scheme: dark) {

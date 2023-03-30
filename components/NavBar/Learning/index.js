@@ -12,31 +12,31 @@ export default function NavBarLearning() {
               <ul className={styles.icon_list}>
                   <li className={styles.icon_text}>
                       <a href="/"><Image src={homeIcon}
-                          width={40}
-                          height={36} /></a>
+                          width={30}
+                          height={26} /></a>
                       <a href="/">Home</a>
                   </li>
 
                   <li className={styles.icon_text}>
                       <a href="/learning"><Image className={styles.learn}
                           src={learnIcon}
-                          width={43}
-                          height={30} /></a>
+                          width={30}
+                          height={20} /></a>
                       <a href="/learning">Learning</a>
                   </li>
 
                   <li className={styles.icon_text}>
                       <a href=""><Image src={quizIcon}
-                          width={43}
-                          height={35} /></a>
+                          width={30}
+                          height={26} /></a>
                       <a href="">Quiz</a>
                   </li>
 
                   <li className={styles.icon_text}>
                       <a href=""><Image className={styles.tutorial}
                           src={tutorialIcon}
-                          width={45}
-                          height={28} /></a>
+                          width={30}
+                          height={20} /></a>
                       <a href="">Tutorial</a>
                   </li>
               </ul>

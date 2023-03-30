@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Learning.module.css'
 import NavBarLearning from '@/components/NavBar/Learning'
 import TopBar from '@/components/TopBar'
-import LearningContents from '@/components/Learning'
+import LearningIntro from '@/components/Learning/Introduction'
 
 export default function Learning() {
   return (
@@ -15,7 +15,7 @@ export default function Learning() {
       </Head>
       <main className={styles.main}>
         <TopBar />
-        <LearningContents />
+        <LearningIntro />
         <NavBarLearning/>
       </main>
     </>
