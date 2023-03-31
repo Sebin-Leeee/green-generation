@@ -47,7 +47,7 @@ const Complete = () => {
           <div className={styles.buttons}>
             <button className={styles.button1}> <a href="/learning">START QUIZ</a></button>
             <button className={styles.button2}><a href="/learning">REVIEW LEARNING</a></button>
-            <button className={styles.button3}><a href="/learning">MORE TERMINOLOGIES</a></button>
+            <button className={styles.button3}><a href="/resources">MORE TERMINOLOGIES</a></button>
         </div>
           </>
         )}
