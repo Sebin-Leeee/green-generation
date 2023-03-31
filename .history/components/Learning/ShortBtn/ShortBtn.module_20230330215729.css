@@ -1,0 +1,10 @@
+.button{
+    position: fixed;
+    bottom: 12%;
+    margin-left: 250px;
+    padding: 15px 30px;
+    color: var(--color--white);
+    background-color: var(--color--blue);
+    border: none;
+    border-radius: 20px;
+}

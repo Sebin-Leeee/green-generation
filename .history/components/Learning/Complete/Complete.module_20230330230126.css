@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mascot_style{
+    position: fixed;
+    bottom: 20%;
+}
+
+.button{
+    width: 250px;
+    color: var(--color--white);
+    background-color: var(--color--blue);
+    border: none;
+    border-radius: 20px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
