@@ -22,7 +22,11 @@ export default function Contents() {
   };
   
   const handlePrev = () => {
+    if (contentIndex === 0) {
+      router.push('/learning'); // Navigate to a new page after the third content
+    } else{
     setContentIndex((contentIndex - 1 + contents.length) % contents.length);
+    }
   };
   return (
     <>

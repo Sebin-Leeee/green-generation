@@ -9,11 +9,20 @@
     bottom: 20%;
 }
 
-.button{
+.button1, .button3{
     width: 280px;
     height: 60px;
     color: var(--color--white);
     background-color: var(--color--blue);
+    border: none;
+    border-radius: 20px;
+}
+
+.button2{
+    width: 280px;
+    height: 60px;
+    color: var(--color--white);
+    background-color: var(--color--orange);
     border: none;
     border-radius: 20px;
 }

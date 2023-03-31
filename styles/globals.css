@@ -50,10 +50,15 @@ h2{
   font-family: var(--font-mono);
   font-weight: 700;
 }
+h3{
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
 
 p{
   font-size: 17px;
-  font-family: var(--font-mono)
+  font-family: var(--font-mono);
+  font-weight: 400;
 }
 
 @media (prefers-color-scheme: dark) {
