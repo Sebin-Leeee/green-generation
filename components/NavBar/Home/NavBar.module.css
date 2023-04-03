@@ -3,8 +3,8 @@
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 15px;
+    padding-bottom: 8px;
+    padding-top: 12px;
     position: fixed;
     bottom : 0;
 }
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 44px;
     font-family: var(--font-mono);
     color: var(--color--olive);
 }
@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    font-size: 14px;
 }
 
 .learn, 
