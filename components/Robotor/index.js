@@ -8,7 +8,7 @@ export default function Robotor({
     return (
         <>
             <div className={styles.questionContainer}>
-                <Image src="/robotor.png" width={100} height={100} />
+                <Image src="/robotor.png" alt="robotor image"width={100} height={100} />
             </div>
             <div className={styles.questionContainer}>
 

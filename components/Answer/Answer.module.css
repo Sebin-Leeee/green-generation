@@ -8,4 +8,29 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    
+}
+
+.question__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    margin: 16px 0;
+}
+.question__div h3{
+    margin: 0;
+}
+.ProgressBar{
+    padding: 16px 0;
+}
+.btn__container{
+    padding: 8px 0;
+}
+
+.complete__container{
+    min-height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }

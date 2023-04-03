@@ -24,7 +24,16 @@ export default function Home() {
           loop>
           <source src="/Tutorial-BG.mp4" type="video/mp4" />
         </video>
-        <Link href = "/quiz">Quiz</Link>
+        <div className={styles.title}>
+          <p>Welcome to</p>
+          <h1>GREEN GRENERATION</h1>
+        </div>
+        <div className={styles.delay__container}>
+        <Link href="/tutorial"><Image className={styles.tap} src="/tap.png" alt="tap image" width={45} height={70} /></Link>
+          <div>
+            <Link href="/tutorial"><h2>Tap to Continue</h2></Link>
+          </div>
+        </div>
       </main>
     </>
   )
