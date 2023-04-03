@@ -4,6 +4,7 @@ import homeIcon from '../../../public/navbar_icon/home.png'
 import learnIcon from '../../../public/navbar_icon/learn_blue.png'
 import quizIcon from '../../../public/navbar_icon/quiz.png'
 import tutorialIcon from '../../../public/navbar_icon/tutorial.png'
+import Link from 'next/link'
 
 export default function NavBarLearning() {
   return (
@@ -11,33 +12,33 @@ export default function NavBarLearning() {
           <div className={styles.container}>
               <ul className={styles.icon_list}>
                   <li className={styles.icon_text}>
-                      <a href="/"><Image src={homeIcon}
+                      <Link href="/"><Image src={homeIcon}
                           width={30}
-                          height={26} /></a>
-                      <a href="/">Home</a>
+                          height={26} /></Link>
+                      <Link href="/">Home</Link>
                   </li>
 
                   <li className={styles.icon_text}>
-                      <a href="/learning"><Image className={styles.learn}
+                      <Link href="/learning"><Image className={styles.learn}
                           src={learnIcon}
                           width={30}
-                          height={20} /></a>
-                      <a href="/learning">Learning</a>
+                          height={20} /></Link>
+                      <Link href="/learning">Learning</Link>
                   </li>
 
                   <li className={styles.icon_text}>
-                      <a href=""><Image src={quizIcon}
+                      <Link href="/quiz"><Image src={quizIcon}
                           width={30}
-                          height={26} /></a>
-                      <a href="">Quiz</a>
+                          height={26} /></Link>
+                      <Link href="/quiz">Quiz</Link>
                   </li>
 
                   <li className={styles.icon_text}>
-                      <a href=""><Image className={styles.tutorial}
+                      <Link href="/tutorial"><Image className={styles.tutorial}
                           src={tutorialIcon}
                           width={30}
-                          height={20} /></a>
-                      <a href="">Tutorial</a>
+                          height={20} /></Link>
+                      <Link href="/tutorial">Tutorial</Link>
                   </li>
               </ul>
           </div>
