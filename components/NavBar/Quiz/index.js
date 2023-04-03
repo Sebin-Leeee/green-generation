@@ -21,19 +21,17 @@ export default function NavBarQuiz() {
 
                   <li className={styles.icon_text}>
                       <Link href="/learning"><Image className={styles.learn}
-                      <Link href="/learning"><Image className={styles.learn}
                           src={learnIcon}
                           width={30}
                           height={20} /></Link>
-                      <Link href="/learning">Learning</Link>
-                          height={20} /></Link>
+                
                       <Link href="/learning">Learning</Link>
                   </li>
 
                   <li className={styles.icon_text}>
                       <Link href="/quiz"><Image src={quizIcon}
                           width={30}
-                          height={26} /></a>
+                          height={26} /></Link>
                       <Link href="/quiz">Quiz</Link>
                   </li>
 
@@ -41,7 +39,7 @@ export default function NavBarQuiz() {
                       <Link href="/tutorial"><Image className={styles.tutorial}
                           src={tutorialIcon}
                           width={30}
-                          height={20} /></a>
+                          height={20} /></Link>
                       <Link href="/tutorial">Tutorial</Link>
                   </li>
               </ul>
