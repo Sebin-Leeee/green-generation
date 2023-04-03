@@ -4,6 +4,7 @@ import homeIcon from '../../../public/navbar_icon/home.png'
 import learnIcon from '../../../public/navbar_icon/learn.png'
 import quizIcon from '../../../public/navbar_icon/quiz_blue.png'
 import tutorialIcon from '../../../public/navbar_icon/tutorial.png'
+import Link from 'next/link'
 
 export default function NavBarQuiz() {
   return (
@@ -11,25 +12,25 @@ export default function NavBarQuiz() {
           <div className={styles.container}>
               <ul className={styles.icon_list}>
                   <li className={styles.icon_text}>
-                      <a href=""><Image src={homeIcon}
+                      <Link href="/index"><Image src={homeIcon}
                           width={30}
-                          height={26} /></a>
-                      <a href="">Home</a>
+                          height={26} /></Link>
+                      <Link href="/index">Home</Link>
                   </li>
 
                   <li className={styles.icon_text}>
-                      <a href=""><Image className={styles.learn}
+                      <Link href="/learning"><Image className={styles.learn}
                           src={learnIcon}
                           width={30}
-                          height={20} /></a>
-                      <a href="">Learning</a>
+                          height={20} /></Link>
+                      <Link href="/learning">Learning</Link>
                   </li>
 
                   <li className={styles.icon_text}>
                       <a href=""><Image src={quizIcon}
                           width={30}
                           height={26} /></a>
-                      <a href="">Quiz</a>
+                      <Link href="/quiz">Quiz</Link>
                   </li>
 
                   <li className={styles.icon_text}>
@@ -37,7 +38,7 @@ export default function NavBarQuiz() {
                           src={tutorialIcon}
                           width={30}
                           height={20} /></a>
-                      <a href="">Tutorial</a>
+                      <Link href="/tutorial">Tutorial</Link>
                   </li>
               </ul>
           </div>

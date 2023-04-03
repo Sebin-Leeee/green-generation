@@ -1,0 +1,40 @@
+.main{
+    background-image: url("../public/tutorial-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    
+}
+.img{
+    padding-top: 48px;
+}
+.bar{
+
+    padding-top: 32px;
+}
+.btn{
+    padding-top: 16px;
+}
+.mascot{
+    padding-top: 16px;
+}
+.link{
+    position: absolute;
+    top: 28px;
+    right: 24px;
+    cursor: pointer;
+}
+.link p{
+    padding: 0;
+    margin: 0;
+    color: var(--sky--blue);
+    text-decoration: underline;
+}
+.link a:hover,
+.link a:active{
+    color:var(--accent--orange)
+}
+

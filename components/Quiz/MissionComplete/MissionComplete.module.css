@@ -1,0 +1,36 @@
+.font{
+    font-family: 'Righteous', cursive;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--dark--olive)
+}
+
+.images{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.flower__l {
+    transform: translateY(-70px);
+  }
+  .flower__l img{
+    animation: rotate 5s linear infinite;
+  }
+  .flower__s {
+    width: 50px;
+    transform: translateY(70px);
+  }
+  .flower__s img{
+    animation: rotate 5s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+     }
+  }

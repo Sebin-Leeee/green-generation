@@ -1,0 +1,12 @@
+.main{
+    background-image: url("../public/quiz-background-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.main h2{
+    margin: 16px;
+}
