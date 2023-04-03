@@ -15,7 +15,6 @@
     align-items: center;
     justify-content: center;
     gap: 44px;
-    gap: 44px;
     font-family: var(--font-mono);
     color: var(--color--olive);
 }

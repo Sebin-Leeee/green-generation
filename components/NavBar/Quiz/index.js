@@ -5,7 +5,6 @@ import learnIcon from '../../../public/navbar_icon/learn.png'
 import quizIcon from '../../../public/navbar_icon/quiz_blue.png'
 import tutorialIcon from '../../../public/navbar_icon/tutorial.png'
 import Link from 'next/link'
-import Link from 'next/link'
 
 export default function NavBarQuiz() {
   return (
