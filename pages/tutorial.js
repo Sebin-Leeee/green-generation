@@ -1,4 +1,5 @@
 import TutorialCarousel from "@/components/Tutorial/TutorialCarousel";
+import Head from "next/head";
 import BtnTutorial from "@/components/Tutorial/BtnTutorial";
 import TutorialProgress from "@/components/Tutorial/TutorialMascot/TutorialProgress/TutorialProgress";
 import { useState, useEffect } from "react";
@@ -19,16 +20,19 @@ export default function tutorial() {
     const changeImage = (change) => {
         if (change == "backward") {
             setImg(img - 1);
-            console.log(img);
         } else if (change == "forward") {
             setImg(img + 1);
-            console.log(img);
         }
     }
 
 
     return (
-        <>
+        <>            <Head>
+            <title>GREEN GENERATION</title>
+            <meta name="Learning" content="Green Generation - Enter Tutorial" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="icon" href="/logo.png" />
+        </Head>
             <main className={styles.main}>
                 {skip === false && (
                     <>
@@ -68,9 +72,9 @@ export default function tutorial() {
                 )}
                 {
                     skip === true && (
-                        <SkipMascot 
-                        skip={skip}
-                        setSkip={setSkip}/>
+                        <SkipMascot
+                            skip={skip}
+                            setSkip={setSkip} />
                     )
                 }
 

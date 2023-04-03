@@ -2,12 +2,12 @@ export const tutorialLines = {
     lines: [
         {
             id: 1,
-            text: "My name is Greenie! Welcome to Green Generation, a Carbon Footpirnt App, that promotes healthy lifestyles!"
+            text: "Welcome to Green Generation, a carbon footpirnt App promotes healthy lifestyles!"
 
         },
         {
             id: 2,
-            text: "In Green Generation, you have two main goals: Learn and Quiz."
+            text: "My name is Greenie. I am here to guide you through the missions: Learn and Quiz."
 
         },
         {
