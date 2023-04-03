@@ -35,11 +35,11 @@ export default function NavBarQuiz() {
                   </li>
 
                   <li className={styles.icon_text}>
-                      <Link href="/tutorial"><Image className={styles.tutorial}
+                      <Link href="/tutorialHome"><Image className={styles.tutorial}
                           src={tutorialIcon}
                           width={30}
                           height={20} /></Link>
-                      <Link href="/tutorial">Tutorial</Link>
+                      <Link href="/tutorialHome">Tutorial</Link>
                   </li>
               </ul>
           </div>
