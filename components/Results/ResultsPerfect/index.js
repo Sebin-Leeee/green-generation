@@ -1,4 +1,6 @@
 import styles from '@/components/Results/ResultsPerfect/resultsperfect.module.css';
+import TopBar from '@/components/TopBar';
+import NavBarQuiz from '@/components/NavBar/Quiz';
 
 
 
@@ -8,6 +10,9 @@ export default function ResultsPerfect() {
 
     return (
         <>
+
+            <TopBar/>
+
 
             <header>
 
@@ -51,9 +56,7 @@ export default function ResultsPerfect() {
 
             </main>
 
-            <nav>
-
-            </nav>
+            
 
 
         </>
