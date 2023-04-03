@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.bar__green{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--frog--green);
+}
+.bar__grey{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--off-white-60);
+}

@@ -1,8 +1,9 @@
+
 export const quizList = {
     lists: [
         {
             id: 1,
-            question1:"Let’s meet at Greenly Café after 30 minutes. ",
+            question1:"Let's meet at Greenly Café after 30 minutes. ",
             question2:"There are three ways for you to reach the Café.",
             answers: [
                 {   id:1,
@@ -21,8 +22,8 @@ export const quizList = {
         },
         {
             id: 2,
-            question1:"Let’s meet at Greenly Café after 30 minutes. ",
-            question2:"There are three ways for you to reach the Café.",
+            question1:"Nice to meet you. I want to buy you a free drink",
+            question2:"What do you want to order today?",
             answers: [
                 {   id:1,
                     text: "Thank you! I will have orange juice in a plastic cup.",
@@ -39,11 +40,11 @@ export const quizList = {
         },
         {
             id: 3,
-            question1:"Let’s meet at Greenly Café after 30 minutes. ",
-            question2:"There are three ways for you to reach the Café.",
+            question1:"Do you want to get food later?",
+            question2:"I am craving some fruit! Let's go!",
             answers: [
                 {id:1,
-                    text: "Lets go the supermarket for berries from near cities!",
+                    text: "Lets go the supermarket for berries from other cities!",
                     score: 2
                 },
                 {id:2,
@@ -51,9 +52,10 @@ export const quizList = {
                     score: 3
                 },
                 {id:3,
-                    text: "Lets do it, I heard the mall has the best imported berries.",
+                    text: "I heard the mall has the best imported berries.",
                     score: 1
                 }],
         }
     ]
+
 }

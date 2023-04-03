@@ -1,0 +1,36 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mascot_style{
+    position: fixed;
+    bottom: 20%;
+}
+
+.button1, .button3{
+    width: 280px;
+    height: 60px;
+    color: var(--color--white);
+    background-color: var(--color--blue);
+    border: none;
+    border-radius: 20px;
+}
+
+.button2{
+    width: 280px;
+    height: 60px;
+    color: var(--color--white);
+    background-color: var(--color--orange);
+    border: none;
+    border-radius: 20px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+  

@@ -1,0 +1,32 @@
+.container{
+    background-color: var(--color--white-back);
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-top: 12px;
+    position: fixed;
+    bottom : 0;
+}
+.icon_list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+    font-family: var(--font-mono);
+    color: var(--color--olive);
+}
+
+.icon_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: 14px;
+}
+
+.learn, 
+.tutorial{
+    margin-bottom: 3px;
+}

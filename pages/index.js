@@ -1,7 +1,7 @@
+
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 export default function Home() {
@@ -16,16 +16,27 @@ export default function Home() {
         <link rel="icon" href="" />
       </Head>
       <main className={styles.main}>
-        <video
+        <Link href="/tutorial"> <video
           preload="auto"
           playsInline
           autoPlay
           muted
           loop>
           <source src="/Tutorial-BG.mp4" type="video/mp4" />
-        </video>
-        <Link href = "/quiz">Quiz</Link>
+        </video></Link>
+       
+        <div className={styles.title}>
+          <p>Welcome to</p>
+          <h1>GREEN GRENERATION</h1>
+        </div>
+        <div className={styles.delay__container}>
+        <Link href="/tutorial"><Image className={styles.tap} src="/tap.png" alt="tap image" width={45} height={70} /></Link>
+          <div>
+            <Link href="/tutorial"><h2>Tap to Continue</h2></Link>
+          </div>
+        </div>
       </main>
     </>
   )
 }
+

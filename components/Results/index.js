@@ -1,3 +1,4 @@
+
 export default function Results({ resultScore }) {
   if (resultScore == 9) {
     return "Result Perfect";
@@ -8,4 +9,3 @@ export default function Results({ resultScore }) {
   } else {
     return "Result Improve";
   }
-}

@@ -1,8 +1,10 @@
-import { quizList } from "@/data/quizList";
+
 import { useState } from "react";
-import Answer from "@/components/Answer";
+import Answer from "@/components/Quiz/Answer";
 import Results from "@/components/Results";
+import QuizStart from "@/components/Quiz/QuizStart/QuizStart";
 import styles from '@/styles/Quiz.module.css'
+import NavBarQuiz from "@/components/NavBar/Quiz";
 
 export default function Quiz() {
   const [score, setScore] = useState(0);
@@ -19,30 +21,46 @@ export default function Quiz() {
     setScore(0);
     setCurrentQuestion(1);
     setSubmitted(false);
-    setQuizStarted(true);
+    setQuizStarted(false);
   };
 
   const handleStart = () => {
     setQuizStarted(true);
   };
 
+  
   return (
     <>
-      {!quizStarted && <button onClick={handleStart}>Start Now</button>}
+      <main className={styles.main}>
+        <div className={styles.container}>
+          {!quizStarted &&
+            (
+              <>
+                <div><QuizStart handleStart={handleStart}/></div>
+               
+              </>
+            )}
+         
+          {quizStarted && !submitted && (
+            <>
+            <Answer
+              onSubmit={quizSubmit}
+              setQuizStarted={setQuizStarted}
+              setCurrentQuestion={setCurrentQuestion}
+            />
+            <NavBarQuiz/>
+            </>
+            
+          )}
 
-      {quizStarted && !submitted && (
-        <Answer
-          onSubmit={quizSubmit}
-          currentQuestion={currentQuestion}
-          setCurrentQuestion={setCurrentQuestion}
-          questions={quizList}
-        />
-      )}
+          {submitted && <Results resultScore={score} />}
+          {submitted && (
+            <button onClick={() => handleRestart()}>Restart</button>
+          )}
+        </div>
+      </main>
 
-      {submitted && <Results resultScore={score} />}
-      {submitted && (
-        <button onClick={() => handleRestart()}>Restart</button>
-      )}
+
     </>
   );
 }
