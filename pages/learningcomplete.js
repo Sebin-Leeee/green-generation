@@ -38,11 +38,11 @@ export default function LearningComplete() {
 
   return (
     <>
-      <Head>
+   <Head>
         <title>GREEN GENERATION</title>
-        <meta name="Learning" content="" />
+        <meta name="Learning" content="Green Generation - Learning Complete"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <main className={styles.main}>
         <TopBar />

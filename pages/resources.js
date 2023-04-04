@@ -1,5 +1,6 @@
 import styles from '../styles/Resources.module.css'
 import Image from 'next/image'
+import Head from "next/head";
 import React, { useState } from 'react';
 import NavBarLearning from '@/components/NavBar/Learning';
 import TopBar from '@/components/TopBar';

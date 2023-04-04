@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Head from "next/head";
 import Answer from "@/components/Quiz/Answer";
 import Results from "@/components/Results";
 import QuizStart from "@/components/Quiz/QuizStart/QuizStart";
@@ -30,6 +31,12 @@ export default function Quiz() {
   
   return (
     <>
+                <Head>
+                <title>GREEN GENERATION</title>
+                <meta name="Learning" content="Green Generation - Quiz" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/logo.png" />
+            </Head>
       <main className={styles.main}>
         <div className={styles.container}>
           {!quizStarted &&
