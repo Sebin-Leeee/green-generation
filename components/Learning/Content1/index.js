@@ -5,7 +5,7 @@ export default function Content1() {
   return (
     <>
     <div className={styles.container}>
-      <h2>1.What is <br/> GREEN GENERATION?</h2>
+      <h2>1. What is <br/> GREEN GENERATION?</h2>
       <p>GREEN GENERATION 
         <br/>is an app
         <br/>designed to educate users about their carbon footprint

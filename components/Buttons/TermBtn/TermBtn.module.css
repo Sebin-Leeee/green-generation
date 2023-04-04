@@ -1,11 +1,10 @@
 .button{
-    padding: 15px 30px;
+    width: 300px;
+    height: 55px;
     color: var(--color--white);
     background-color: var(--color--blue);
     border: none;
     border-radius: 20px;
-}
-.buttonContainer{
-    display: flex;
-    gap: 125px;
+    font-size: 20px;
+    font-weight: 400;
 }

@@ -1,0 +1,18 @@
+.mascot_style{
+    position: fixed;
+    bottom: 20%;
+    margin-left: 20px;
+    animation: upAndDown 1.2s ease-in-out infinite;
+}
+
+@keyframes upAndDown {
+  0% {
+    bottom: 33vh;
+  }
+  50% {
+    bottom: 32vh;
+  }
+  100% {
+    bottom: 33vh;
+  }
+}

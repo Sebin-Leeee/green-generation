@@ -6,31 +6,28 @@
     padding: 6rem;
     min-height: 100vh;
     background-color: var(--color--lightgreen);
-    background-image: url(../public/learning/Background1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
   }
-  
-  
-  /* Enable hover only on non-touch devices */
-  @media (hover: hover) and (pointer: fine) {
-   
-  }
-  
-  
-  
-  /* Mobile */
-  @media (max-width: 700px) {
-    
-  }
-  
-  /* Tablet and Smaller Desktop */
-  @media (min-width: 701px) and (max-width: 1120px) {
-    
-  }
-  
-  @media (prefers-color-scheme: dark) {
-   
-  }
-  
+
+  .container{
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    top: 40vh;
+    gap: 45px;
+    align-items: center;
+}
+ 
+.button{
+  padding: 15px 30px;
+  color: var(--color--white);
+  background-color: var(--color--blue);
+  border: none;
+  border-radius: 20px;
+}
+.buttonContainer{
+  display: flex;
+  gap: 125px;
+}

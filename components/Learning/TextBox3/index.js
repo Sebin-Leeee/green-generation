@@ -7,7 +7,7 @@ export default function TextBox3() {
     <>
       <div className={styles.main}>
         <div className={styles.container}>
-            <p className={styles.text}>Click 'Next' to start !</p>
+            <p className={styles.text}>Click the button to start</p>
         </div>
         
       </div>

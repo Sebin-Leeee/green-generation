@@ -12,18 +12,18 @@ export default function NavBarHome() {
           <div className={styles.container}>
               <ul className={styles.icon_list}>
                   <li className={styles.icon_text}>
-                      <Link href="/"><Image src={homeIcon}
+                      <Link href="/homepage"><Image src={homeIcon}
                           width={30}
                           height={26} /></Link>
-                      <Link href="/">Home</Link>
+                      <Link href="/homepage">Home</Link>
                   </li>
 
                   <li className={styles.icon_text}>
-                      <Link href="/learning"><Image className={styles.learn}
+                      <Link href="/learningIntro"><Image className={styles.learn}
                           src={learnIcon}
                           width={30}
                           height={20} /></Link>
-                      <Link href="/learning">Learning</Link>
+                      <Link href="/learningIntro">Learning</Link>
                   </li>
 
                   <li className={styles.icon_text}>

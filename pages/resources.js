@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react';
 import NavBarLearning from '@/components/NavBar/Learning';
 import TopBar from '@/components/TopBar';
+import ReviewBtn from '@/components/Buttons/Review';
 
 export default function Resources() {
   const [show1Explanation, setShow1Explanation] = useState(false);
@@ -16,6 +17,7 @@ export default function Resources() {
     <>
     <div className={styles.main}>
     <TopBar />
+    <ReviewBtn className={styles.back}/>
     <NavBarLearning />
     <div className={styles.container}>
       <h2>Want to learn<br/>more terminologies</h2>
