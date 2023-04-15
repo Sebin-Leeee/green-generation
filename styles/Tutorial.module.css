@@ -9,21 +9,28 @@
     
 }
 .img{
-    padding-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bar{
-
-    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn{
-    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .mascot{
-    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .link{
     position: absolute;
-    top: 28px;
+    top: 4vh;
     right: 24px;
     cursor: pointer;
 }
@@ -38,3 +45,10 @@
     color:var(--accent--orange)
 }
 
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 27.5% 47.5% 15%;
+
+}

@@ -43,9 +43,7 @@ export default function tutorial() {
                             <div className={styles.bar}>
                                 <TutorialProgress img={img} />
                             </div>
-                            <div>
 
-                            </div >
                             <div className={styles.img}>
                                 <TutorialCarousel
                                     img={img} />
@@ -60,6 +58,7 @@ export default function tutorial() {
                                         id={info.id} />
                                 })}
                             </div>
+                            
                             <div className={styles.btn}>
                                 <BtnTutorial
                                     img={img}

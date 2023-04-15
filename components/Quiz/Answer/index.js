@@ -53,12 +53,13 @@ export default function Answer(props) {
 
     return (
         <>
-            <div>
-                {data.map((info, index) => {
-                    if (info.id === currentQ) {
-                        return (
-                            
-                                <div key={index}>
+            <div className={styles.main__container}>
+                <div>
+                    {data.map((info, index) => {
+                        if (info.id === currentQ) {
+                            return (
+
+                                <div className={styles.container} key={index}>
                                     <div className={styles.ProgressBar}>
                                         <ProgressBar
                                             currentQ={currentQ} />
@@ -75,42 +76,44 @@ export default function Answer(props) {
 
                                     <div className={styles.listContainer}>
                                         <ul className={styles.ul}>
-                                           
-                                                <>
-                                                    <Card
-                                                        key={info.id}
-                                                        cardIndex={info.id}
-                                                        cardAnswer={info.answers}
-                                                        selectedAnswerIndex={selectedAnswerIndex}
-                                                        onSelectAnswer={handleSelectAnswer}
-                                                    />
-                                                </>
+
+                                            <>
+                                                <Card
+                                                    key={info.id}
+                                                    cardIndex={info.id}
+                                                    cardAnswer={info.answers}
+                                                    selectedAnswerIndex={selectedAnswerIndex}
+                                                    onSelectAnswer={handleSelectAnswer}
+                                                />
+                                            </>
 
                                         </ul>
                                     </div>
 
                                 </div>
-                    
 
-                        );
-                    }
-                })}
-            </div>
-            <div
-                style={{ display: currentQ === data.length + 1 ? "" : "none" }}>
-                <div className={styles.complete__container}>
-                    <MissionComplete />
+
+                            );
+                        }
+                    })}
+                </div>
+                <div
+                    style={{ display: currentQ === data.length + 1 ? "" : "none" }}>
+                    <div className={styles.complete__container}>
+                        <MissionComplete />
+                    </div>
+                </div>
+                <div>
+                    <BtnQuiz
+                        currentQ={currentQ}
+                        buttonFn={buttonFn}
+                        selectedAnswerIndex={selectedAnswerIndex}
+                        data={data}
+                        handleSubmit={handleSubmit}
+                    />
                 </div>
             </div>
-            <div>
-                <BtnQuiz
-                    currentQ={currentQ}
-                    buttonFn={buttonFn}
-                    selectedAnswerIndex={selectedAnswerIndex}
-                    data={data}
-                    handleSubmit={handleSubmit}
-                />
-            </div>
+
         </>
 
     );

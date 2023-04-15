@@ -2,9 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  const router = useRouter();
 
+  const handleClick = () => {
+    router.push('/tutorial');
+  };
 
   return (
     <>
@@ -14,15 +19,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main className={styles.main}>
-        <Link href="/tutorial"> <video
+      <main className={styles.main}  onClick={handleClick}>
+       <video
           preload="auto"
           playsInline
           autoPlay
           muted
           loop>
           <source src="/Tutorial-BG.mp4" type="video/mp4" />
-        </video></Link>
+        </video>
        
         <div className={styles.title}>
           <p>Welcome to</p>
