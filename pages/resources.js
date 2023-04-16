@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import NavBarLearning from '@/components/NavBar/Learning';
 import TopBar from '@/components/TopBar';
 import ReviewBtn from '@/components/Buttons/Review';
+import LineChart from '@/components/Learning/LineChart';
 
 export default function Resources() {
   const [show1Explanation, setShow1Explanation] = useState(false);
@@ -106,12 +107,12 @@ export default function Resources() {
           <div className={styles.topic} onClick={() => setShow6Explanation(true)}><p>6. Circular Economy</p></div>
           {show6Explanation && (
             <div className={styles.overlay}>
-              <div className={styles.explanationBox}>
+              <div className={styles.explanationBox6}>
               <button className={styles.closeButton} onClick={() => setShow6Explanation(false)}>x</button>
-              <div className={styles.textContainer}>
-                <h3>6. Circular Economy</h3>
-                <p>This is an economic system that aims to minimize waste
-                     and resource use by promoting the reuse, recycling, and repurposing of materials.</p>
+              <div className={styles.textContainer6}>
+                <h3>6. Global CO2 emissions chart</h3>
+                <p>line</p>
+                <LineChart />
                 </div>
               </div>
             </div>
@@ -123,3 +124,12 @@ export default function Resources() {
     </>
   )
 }
+/**Global carbon dioxide (CO2) emissions from energy combustion
+ *  and industrial processes1 grew 0.9% or 321 Mt in 2022 to a new all-time high of 36.8 Gt. 
+ * This estimate is based on the IEA’s detailed region-by-region and fuel-by-fuel analysis, 
+ * incorporating the latest official national statistics and publicly available data on energy use, 
+ * economic indicators, and weather. Last year’s increase follows two years of exceptional 
+ * oscillations in energy-related emissions. Emissions shrank by more than 5% in 2020, 
+ * as the Covid-19 pandemic cut energy demand. In 2021, emissions rebounded past pre-pandemic levels, 
+ * growing more than 6% in tandem with economic stimulus and the roll-out of vaccines 
+ * */
