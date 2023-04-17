@@ -33,11 +33,11 @@
   .explanationBox {
     background-color: var(--color--frog-green);
     width: 320px;
-    height: 410px;
+    height: 400px;
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-    border-radius: 50px;
+    border-radius: 20px;
     position: center;
     display: flex;
     flex-direction: column;
