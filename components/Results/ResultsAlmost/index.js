@@ -18,11 +18,11 @@ export default function ResultsAlmost() {
 
                 <header className={styles.title}>
                     <div className={styles.title_box}>
-                        <h1 className={styles.title}> Congratulations!! <br /> You got a perfect score!</h1>
+                        <h1 className={styles.title}> Almost There! <br /> Keep Learning!</h1> 
                     </div>
 
                     <div className={styles.star_box}>
-                        <Image src="/stars/threeStar.png" width={400} height={110} />
+                        <Image src="/stars/twoStar.png" width={400} height={110} />
                     </div>
                 </header>
 
