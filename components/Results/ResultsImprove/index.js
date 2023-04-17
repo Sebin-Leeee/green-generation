@@ -2,7 +2,7 @@ import styles from '@/components/Results/ResultsImprove/Resultsimprove.module.cs
 import TopBar from '@/components/TopBar';
 import NavBarQuiz from '@/components/NavBar/Quiz';
 import Image from 'next/image';
-
+import SelectedAnswer from '../SelectedAnswer';
 
 
 export default function Resultsimprove() {
@@ -29,6 +29,7 @@ export default function Resultsimprove() {
                 <div className={styles.results_box}>
 
                     <div className={styles.question_box}>
+                    <SelectedAnswer answerID={1}/>
                         <h3 className={styles.heading}>1. Traveling To A Cafe</h3>
                         <p className={styles.desc}>
                             By taking a taxi to your destintions, you are contributing to more carbon emissions than necessary.
@@ -39,6 +40,7 @@ export default function Resultsimprove() {
                     </div>
 
                     <div className={styles.question_box}>
+                    <SelectedAnswer answerID={2}/>
                         <h3 className={styles.heading}>2. Choosing Your Cup</h3>
                         <p className={styles.desc}>
                             By choosing to use plastic over other alternatives you are adding more waste to landfills.
@@ -47,6 +49,7 @@ export default function Resultsimprove() {
                     </div>
 
                     <div className={styles.question_box}>
+                    <SelectedAnswer answerID={3}/>
                         <h3 className={styles.heading}>3. Getting Fruit From The Store</h3>
                         <p className={styles.desc}>
                             Food that travels long distances can contribute to more carbon emissions and increase your footprint.

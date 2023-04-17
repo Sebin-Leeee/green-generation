@@ -2,7 +2,7 @@ import styles from '@/components/Results/ResultsAlmost/Resultsalmost.module.css'
 import TopBar from '@/components/TopBar';
 import NavBarQuiz from '@/components/NavBar/Quiz';
 import Image from 'next/image';
-
+import SelectedAnswer from '../SelectedAnswer';
 
 
 export default function ResultsAlmost() {
@@ -29,6 +29,7 @@ export default function ResultsAlmost() {
                 <div className={styles.results_box}>
 
                     <div className={styles.question_box}>
+                        <SelectedAnswer answerID={1}/>
                         <h3 className={styles.heading}>1. Traveling To A Cafe</h3>
                         <p className={styles.desc}>
                             Taking transit is one of the best ways to reduce your carbon footprint as it encourages society to drive less.
@@ -39,6 +40,7 @@ export default function ResultsAlmost() {
                     </div>
 
                     <div className={styles.question_box}>
+                    <SelectedAnswer answerID={2}/>
                         <h3 className={styles.heading}>2. Choosing Your Cup</h3>
                         <p className={styles.desc}>
                             Using an alternative like paper can be recycled and help cut waste.
@@ -47,6 +49,7 @@ export default function ResultsAlmost() {
                     </div>
 
                     <div className={styles.question_box}>
+                    <SelectedAnswer answerID={3}/>
                         <h3 className={styles.heading}>3. Getting Fruit From The Store</h3>
                         <p className={styles.desc}>
                             Food imported from near by cities to your supermarket is much better than food from distant countries.

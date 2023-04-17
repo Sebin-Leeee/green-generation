@@ -2,7 +2,7 @@ import styles from '@/components/Results/ResultsPerfect/Resultsperfect.module.cs
 import TopBar from '@/components/TopBar';
 import NavBarQuiz from '@/components/NavBar/Quiz';
 import Image from 'next/image';
-
+import SelectedAnswer from '../SelectedAnswer';
 
 
 export default function ResultsPerfect() {
@@ -29,6 +29,7 @@ export default function ResultsPerfect() {
                 <div className={styles.results_box}>
 
                     <div className={styles.question_box}>
+                    <SelectedAnswer answerID={1}/>
                         <h3 className={styles.heading}>1. Traveling To A Cafe</h3>
                         <p className={styles.desc}>
                             Walking may take longer but its the best way to completely eliminate the amount of carbon emissions released.
@@ -39,6 +40,7 @@ export default function ResultsPerfect() {
                     </div>
 
                     <div className={styles.question_box}>
+                    <SelectedAnswer answerID={2}/>
                         <h3 className={styles.heading}>2. Choosing Your Cup</h3>
                         <p className={styles.desc}>
                             Owning your own bottle will reduce waste compared to one-time use bottles/cups.
@@ -47,6 +49,7 @@ export default function ResultsPerfect() {
                     </div>
 
                     <div className={styles.question_box}>
+                    <SelectedAnswer answerID={3}/>
                         <h3 className={styles.heading}>3. Getting Fruit From The Store</h3>
                         <p className={styles.desc}>
                             Getting food from the local market is one of best ways to reduce your carbon footprint.

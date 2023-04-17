@@ -14,9 +14,10 @@ export default function Answer(props) {
     const [currentQ, setCurrentQ] = useState(1);
     const [scores, setScores] = useState(0);
     const [previousScore, setPreviousScore] = useState([]);
+    const [selectedAnswers, setSelectedAnswers] = useState([]);
 
     const currentQuestion = quizList.lists.find((q) => q.id === currentQ);
-
+    
     useEffect(() => {
         setData(quizList.lists);
     }, []);
@@ -26,11 +27,13 @@ export default function Answer(props) {
     }, [currentQ]);
 
     const handleSubmit = () => {
-        props.onSubmit(scores);
+        props.onSubmit(scores, selectedAnswers);
     };
 
     const handleSelectAnswer = (index) => {
         setSelectedAnswerIndex(index);
+        const selectedAnswer = currentQuestion.answers[index];
+    localStorage.setItem(`answer-${currentQ}`, JSON.stringify(selectedAnswer));
     };
 
     const buttonFn = (fn) => {
