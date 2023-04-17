@@ -8,7 +8,7 @@
 
 .results_box {
     padding-top: 3rem;
-    gap: 8rem;
+    gap: 5rem;
     display: flex;
     flex-direction: column;
     max-width: 16rem;

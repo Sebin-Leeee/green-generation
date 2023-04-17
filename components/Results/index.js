@@ -3,7 +3,7 @@ import Resultsimprove from "./ResultsImprove";
 import ResultsPerfect from "./ResultsPerfect";
 
 export default function Results({ resultScore }) {
-  if (resultScore == 9) {
+  if (resultScore === 9) {
     return <ResultsPerfect/>;
   } else if (resultScore >= 6) {
     return <ResultsAlmost/>;

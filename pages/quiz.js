@@ -59,9 +59,13 @@ export default function Quiz() {
             
           )}
 
-          {submitted && <Results resultScore={score} />}
+          {submitted && 
+          <div className={styles.result__container}>
+            <Results resultScore={score} />
+            </div>}
           {submitted && (
-            <button className={styles.btn__1} onClick={() => handleRestart()} >Restart</button>
+            <div className={styles.btn__container}><button className={styles.btn__l} onClick={() => handleRestart()} >RESTART</button></div>
+
           )}
         </div>
       </main>
