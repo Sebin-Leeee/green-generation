@@ -22,7 +22,7 @@ export default function ResultsPerfect() {
                     </div>
 
                     <div className={styles.star_box}>
-                        <Image src="/stars/threeStar.png" width={400} height={110} />
+                        <Image className={styles.stars} src="/stars/threeStar.png" width={220} height={65} />
                     </div>
                 </header>
 
@@ -32,7 +32,7 @@ export default function ResultsPerfect() {
                     <SelectedAnswer answerID={1}/>
                         <h3 className={styles.heading}>1. Traveling To A Cafe</h3>
                         <p className={styles.desc}>
-                            Walking may take longer but its the best way to completely eliminate the amount of carbon emissions released.
+                        Taking transit is one of the best ways to reduce your carbon footprint as it encourages society to drive less.
                             <br /> It also allows you to get some cardio in and a breathe of fresh air!
                         </p>
 

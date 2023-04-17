@@ -20,7 +20,7 @@ export default function NameCard() {
         if (formData.username !== null) {
             router.push(
                 {
-                    pathname: './learning',
+                    pathname: './learningIntro',
                     query: {
                         username: formData.username
                     }

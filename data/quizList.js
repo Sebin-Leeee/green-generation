@@ -6,11 +6,11 @@ export const quizList = {
             question2:"There are three ways for you to reach the Café.",
             answers: [
                 {   id:1,
-                    text: "I feel like walking today! I will arrive in 25 minutes",
+                    text: "I will take a bus today! I will arrive in 15 minutes.",
                     score: 3
                 },
                 {   id:2,
-                    text: "I will take a bus today! I will arrive in 15 minutes.",
+                    text: "I will use a shared bike. I will arrive in 20 minutes.",
                     score: 2
                 },
                 {   id:3,
@@ -43,7 +43,7 @@ export const quizList = {
             question2:"I am craving some fruit! Let's go!",
             answers: [
                 {id:1,
-                    text: "Lets go the supermarket for berries from other cities!",
+                    text: "Let's go to the supermarket for berries from other cities!",
                     score: 2
                 },
                 {id:2,

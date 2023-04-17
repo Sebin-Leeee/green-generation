@@ -22,7 +22,7 @@ export default function Resultsimprove() {
                     </div>
 
                     <div className={styles.star_box}>
-                        <Image src="/stars/oneStar.png" width={400} height={110} />
+                        <Image className={styles.stars} src="/stars/oneStar.png" width={220} height={65} />
                     </div>
                 </header>
 

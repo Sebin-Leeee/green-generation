@@ -22,7 +22,7 @@ export default function ResultsAlmost() {
                     </div>
 
                     <div className={styles.star_box}>
-                        <Image src="/stars/twoStar.png" width={400} height={110} />
+                        <Image className={styles.stars}src="/stars/twoStar.png" width={220} height={65} />
                     </div>
                 </header>
 
@@ -32,7 +32,7 @@ export default function ResultsAlmost() {
                         <SelectedAnswer answerID={1}/>
                         <h3 className={styles.heading}>1. Traveling To A Cafe</h3>
                         <p className={styles.desc}>
-                            Taking transit is one of the best ways to reduce your carbon footprint as it encourages society to drive less.
+                            Biking is one of the ways to reduce your carbon footprint. However, it is not the best way to transit!
                             <br /> It may be more inconvenient for you, it helps the planet!
                         </p>
 

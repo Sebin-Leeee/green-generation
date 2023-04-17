@@ -5,7 +5,7 @@ import Results from "@/components/Results";
 import QuizStart from "@/components/Quiz/QuizStart/QuizStart";
 import styles from '@/styles/Quiz.module.css'
 import NavBarQuiz from "@/components/NavBar/Quiz";
-
+import Link from "next/link";
 export default function Quiz() {
   const [score, setScore] = useState(0);
   const [submitted, setSubmitted] = useState(false);
@@ -64,7 +64,10 @@ export default function Quiz() {
             <Results resultScore={score} />
             </div>}
           {submitted && (
-            <div className={styles.btn__container}><button className={styles.btn__l} onClick={() => handleRestart()} >RESTART</button></div>
+            <div className={styles.btn__container}><button className={styles.btn__l} onClick={() => handleRestart()} >RESTART</button>
+            <Link href="learning"> <button className={styles.btn__l__org} onClick={() => handleRestart()} >REVIEW LEARNING</button></Link>
+           </div>
+
 
           )}
         </div>

@@ -22,7 +22,7 @@ export default function ResultsWorst() {
                     </div>
 
                     <div className={styles.star_box}>
-                        <Image src="/stars/noStar.png" width={400} height={110} />
+                        <Image src="/stars/noStar.png" width={220} height={65}/>
                     </div>
                 </header>
 

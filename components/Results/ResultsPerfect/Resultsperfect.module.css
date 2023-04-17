@@ -39,6 +39,24 @@
     text-align: center;
 }
 
+.stars{
+    animation: grow;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.333);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .desc {
     padding-top: 1rem;
     line-height: 150%;
