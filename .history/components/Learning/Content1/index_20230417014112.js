@@ -6,7 +6,7 @@ export default function Content1() {
     <>
     <div className={styles.container}>
       <h2 className={styles.title}>1. What is<br/><span>GREEN GENERATION?</span></h2>
-      <p className={styles.content}><span>GREEN GENERATION</span>
+      <p className={styles.title}><span>GREEN GENERATION?</span>
         <br/>is an app
         <br/>designed to educate users about their carbon footprint
         <br/>and help them reduce

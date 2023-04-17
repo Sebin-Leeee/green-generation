@@ -10,7 +10,7 @@ export default function TextBox2() {
         <div className={styles.container}>
             <p className={styles.text}>After successfully finishing 
             <br/>all the learning tasks,  
-            <br/>the background will turn green!</p>
+            <br/>the background will turn <span>green</span>!</p>
         </div>
       </div>
     </>

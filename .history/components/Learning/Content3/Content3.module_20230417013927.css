@@ -13,7 +13,7 @@
     gap: 50px;
 }
 .details{
-  color: rgb(59, 59, 59);
+  color: var(--color--frog-green);
 }
 .images{
     display: flex;

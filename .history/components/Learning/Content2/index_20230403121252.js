@@ -5,8 +5,7 @@ export default function Content2() {
     <>
     <div className={styles.main}>
     <div className={styles.container}>
-      <h2 className={styles.title}>2. What is <br/> 
-      <span>Carbon Footprint?</span></h2>
+      <h2>2. What is <br/> Carbon Footprint</h2>
       <p>It refers to the 
         <br/>amount of greenhouse gases,
         <br/>designed to educate users about their carbon footprint

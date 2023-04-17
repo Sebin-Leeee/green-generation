@@ -14,7 +14,7 @@ export default function Content3() {
     <>
     <div className={styles.container}>
       <h2>3. How to reduce<br/> Carbon Footprint</h2>
-      <p className={styles.details}>Click to see details.</p>
+      <p>Click to see details.</p>
       <div className={styles.images}>
         <div className={styles.imageContainer}>
           <Image src={Bus} width={90} height={90} onClick={() => setShowBusExplanation(true)} />

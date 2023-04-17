@@ -12,6 +12,7 @@ export default function TextBox2() {
             <br/>all the learning tasks,  
             <br/>the background will turn green!</p>
         </div>
+        
       </div>
     </>
   )
