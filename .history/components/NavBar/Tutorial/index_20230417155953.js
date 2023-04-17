@@ -8,7 +8,7 @@ import Link from 'next/link'
 export default function NavBarTutorial() {
   return (
       <>
-           <div className={styles.container}>
+          <div className={styles.container}>
               <ul className={styles.icon_list}>
                   <li className={styles.icon_text}>
                       <Link href="/homepage"><Image src={homeIcon}
@@ -22,7 +22,6 @@ export default function NavBarTutorial() {
                           src={learnIcon}
                           width={30}
                           height={20} /></Link>
-                
                       <Link href="/learningIntro">Learning</Link>
                   </li>
 
