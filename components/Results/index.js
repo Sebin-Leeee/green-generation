@@ -1,11 +1,15 @@
+import ResultsAlmost from "./ResultsAlmost";
+import Resultsimprove from "./ResultsImprove";
+import ResultsPerfect from "./ResultsPerfect";
+
 export default function Results({ resultScore }) {
   if (resultScore == 9) {
-    return "Result Perfect";
+    return <ResultsPerfect/>;
   } else if (resultScore >= 6) {
-    return "Result Very Good";
+    return <ResultsAlmost/>;
   } else if (resultScore >= 3) {
-    return "Result Almost";
+    return <Resultsimprove/>;
   } else {
-    return "Result Improve";
+    return <ResultsWorst/>;
   }
 }
