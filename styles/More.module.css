@@ -1,0 +1,61 @@
+.main{
+    background-image: url("../public/More-Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+}
+.main__container{
+    display: grid;
+    min-height: 83vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 43% 18% 19% 25%;
+    color: var(--color--white);
+    font-weight: bold;
+    font-size: 1.0625rem;
+}
+.grid__item__1{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10%;
+}
+.grid__item__2{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 70%;
+}
+.grid__item__3{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10%;
+}
+.grid__item__4{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 50%;
+}
+.btn__container{
+    background-color: #E3EACF;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__circle{
+    background-color: var(--color--blue);
+    width: 8.5vh;
+    height: 8.5vh;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn__circle:hover{
+    background-color: var(--color--orange);
+}
