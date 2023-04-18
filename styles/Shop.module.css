@@ -1,0 +1,26 @@
+.main{
+    background-color: #B5D8F4;
+    min-height: 100vh;
+}
+.main__container{
+    padding-top: 5rem;
+}
+.shop__star{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+}
+.shop__score{
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 20px;
+    background-color: var(--off-white-60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.25rem;
+}
+.shop__img{
+    margin-left: -1rem;
+}

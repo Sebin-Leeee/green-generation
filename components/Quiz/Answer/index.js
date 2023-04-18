@@ -7,6 +7,7 @@ import Image from "next/image";
 import Robotor from "../Robotor";
 import BtnQuiz from "../BtnQuiz";
 import MissionComplete from "../MissionComplete/MissionComplete";
+import { useRouter } from "next/router";
 
 export default function Answer(props) {
     const [data, setData] = useState([]);
@@ -17,7 +18,8 @@ export default function Answer(props) {
     const [selectedAnswers, setSelectedAnswers] = useState([]);
 
     const currentQuestion = quizList.lists.find((q) => q.id === currentQ);
-    
+    const router = useRouter();
+
     useEffect(() => {
         setData(quizList.lists);
     }, []);
@@ -28,6 +30,7 @@ export default function Answer(props) {
 
     const handleSubmit = () => {
         props.onSubmit(scores, selectedAnswers);
+        router.push("/shop?score=" + scores);
     };
 
     const handleSelectAnswer = (index) => {
