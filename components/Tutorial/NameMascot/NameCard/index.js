@@ -15,7 +15,7 @@ export default function NameCard() {
     }
     const CheckLogin = () => {
         console.log(formData.username)
-        console.log(formData)
+
 
         if (formData.username !== null) {
             router.push(

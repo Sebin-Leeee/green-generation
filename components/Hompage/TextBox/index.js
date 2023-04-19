@@ -5,8 +5,9 @@ const HomeTextBox = () => {
 
     return (
         <div className={styles.chatboxContainer}>
+            
             <div className={styles.chatbox}>
-                <h2 className={styles.message}>Welcome to 
+                <h2 className={styles.message}>Welcome to
                 <br/>GREEN GENERATION! </h2>
             </div>
             <div className={styles.triangleContainer}>

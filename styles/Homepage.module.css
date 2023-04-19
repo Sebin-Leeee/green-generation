@@ -22,7 +22,7 @@
 .reset__container{
   position: relative;
   top: 55px;
-  left: 120px;
+  left: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,9 +60,11 @@ cursor: pointer;
   background-color: var(--color--orange);
   border: 0.1rem solid var(--color--orange);
   border-radius: 20px;
-  width: 3rem;
+  width: 4rem;
+  height: 1.5rem;
   color: white;
   cursor: pointer;
+  font-size: 1.0625rem;
 }
 .reset__overlay button:disabled{
   background-color: transparent;

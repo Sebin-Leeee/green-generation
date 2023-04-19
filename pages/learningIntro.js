@@ -9,6 +9,7 @@ import TextBox1 from '../components/Learning/TextBox1'
 import TextBox2 from '../components/Learning/TextBox2'
 import TextBox3 from '../components/Learning/TextBox3'
 import mascot from '../public/mascot.png'
+import Username from '@/components/Username';
 
 export default function LearningInt() {
   const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
@@ -18,7 +19,7 @@ export default function LearningInt() {
   useEffect(() => {
     const id = setInterval(() => {
       setCurrentComponentIndex(prevIndex => (prevIndex + 1) % components.length);
-    }, 3000);
+    }, 5000);
     setIntervalId(id);
     return () => clearInterval(id);
   }, []);
@@ -36,15 +37,18 @@ export default function LearningInt() {
         <title>GREEN GENERATION</title>
         <meta name="Learning" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <main className={styles.main}>
         <TopBar />
         <Current />
             <Image className={styles.mascot_style} 
               src={mascot}
-              width={200}/>
+              width={200}
+              alt="leaning page mascot"/>
               <div className={styles.button}><StartLearnBtn/></div>
+            
+    
         <NavBarLearning/>
       </main>
     </>

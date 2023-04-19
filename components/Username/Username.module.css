@@ -1,0 +1,12 @@
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.6rem;
+}
+.message span{
+    color: var(--color--orange);
+    font-weight: bold;
+}

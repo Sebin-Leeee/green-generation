@@ -9,22 +9,18 @@
     
 }
 .reward__grid{
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom:5rem;
     display: grid;
-    grid-template-rows: 50% 30% 20%;
-    min-height: 70vh;
-    align-items: center;
+    grid-template-rows: 50% 25% 25%;
+    min-height: 80vh;
+    align-items:center;
     justify-content: center;
 }
 .main__container{
     padding-top: 4.5rem;
 }
-.shop__star{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin-right: -15rem;
-}
+
 .shop__score{
     height: 1.5rem;
     width: 5rem;
@@ -47,7 +43,7 @@
     margin: 2rem;
 }
 .animation__bg{
-    position:fixed;
+    position:absolute;
     top: 0;
     left: 0;
     background-color: rgba(250,249,246,0.9);
@@ -114,7 +110,7 @@
 .reward__btn button{
     background-color: var(--color--blue);
     border: none;
-    width: 120px;
+    width: 140px;
     height: 30px;
     border-radius: 20px;
     font-weight: bold;
@@ -175,7 +171,7 @@
 }
 
 .reward__botlock{
-    position: fixed;
+    position: absolute;
     width: inherit;
     height: inherit;
     border-radius: 20px;
@@ -200,7 +196,7 @@
   }
 
   .reward__toplock{
-    position: fixed;
+    position: absolute;
     width: inherit;
     height: inherit;
     border-radius: 20px;
@@ -212,4 +208,44 @@
 }
 .reward__toplock img{
     margin: 16px;
+}
+
+.back__btn button{
+    border: none;
+    background-color: var(--color--blue);
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: var(--off--white);
+    height: 1.5rem;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.back__btn button:hover{
+    background-color: var(--color--orange);
+}
+.top__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+.shop__star{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.animation__desc button{
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color--blue);
+    font-size: 1.375rem;
+    color: var(--off--white);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0.5rem 0;
 }

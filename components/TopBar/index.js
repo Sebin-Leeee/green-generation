@@ -8,7 +8,8 @@ export default function TopBar() {
       <>
           <div className={styles.container}>
              <Image src={logo}
-                    width={40}/>
+                    width={40}
+                    alt="logo"/>
             <div className={styles.logo_text}>GREEN GENERATION</div>
           </div>
       </>

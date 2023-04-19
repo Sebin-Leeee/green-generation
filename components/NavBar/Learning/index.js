@@ -14,7 +14,8 @@ export default function NavBarLearning() {
                   <li className={styles.icon_text}>
                       <Link href="/homepage"><Image src={homeIcon}
                           width={30}
-                          height={26} /></Link>
+                          height={26} 
+                          alt="home icon"/></Link>
                       <Link href="/homepage">Home</Link>
                   </li>
 
@@ -22,23 +23,26 @@ export default function NavBarLearning() {
                       <Link href="/learningIntro"><Image className={styles.learn}
                           src={learnIcon}
                           width={30}
-                          height={20} /></Link>
+                          height={20}
+                          alt="learn icon" /></Link>
                       <Link href="/learningIntro">Learning</Link>
                   </li>
 
                   <li className={styles.icon_text}>
                       <Link href="/quiz"><Image src={quizIcon}
                           width={30}
-                          height={26} /></Link>
+                          height={26}
+                          alt="quiz icon" /></Link>
                       <Link href="/quiz">Quiz</Link>
                   </li>
 
                   <li className={styles.icon_text}>
-                      <Link href="/tutorialHome"><Image className={styles.tutorial}
+                      <Link href="/more"><Image className={styles.tutorial}
                           src={tutorialIcon}
                           width={30}
-                          height={20} /></Link>
-                      <Link href="/tutorialHome">Tutorial</Link>
+                          height={20} 
+                          alt="more icon"/></Link>
+                      <Link href="/more">More</Link>
                   </li>
               </ul>
           </div>

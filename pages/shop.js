@@ -15,6 +15,7 @@ export default function Shop() {
     const [view, setView] = useState(false);
     const [error, setError] = useState(false);
     const [score, setScore] = useState(0);
+
     let animationContainer = createRef();
     let animationContainer2 = createRef();
 
@@ -106,9 +107,12 @@ export default function Shop() {
             <main className={styles.main}>
                 <TopBar />
                 <div className={styles.main__container}>
-                    <div>
-                        <div className={styles.shop__star}>
+                    <div className={styles.top__container}>
+                        <div className={styles.back__btn}>
+                           <Link href="more"><button>Go Back</button></Link> 
+                        </div>
 
+                        <div className={styles.shop__star}>
                             <div className={styles.shop__score}>
                                 {stars === 3 && (
                                     <>
@@ -141,7 +145,7 @@ export default function Shop() {
                 <div className={styles.reward__grid}>
                     <div className={styles.reward__topcontainer}>
                         <div className={styles.reward__topItem}>
-                            <div className={styles.reward__imgbg}>
+                            <div className={styles.reward__imgbg} onClick={handleView}>
 
                                 <Image src="/shop/reward-leafy.png" width={115} height={155} alt="reward 1" />
 
@@ -168,6 +172,10 @@ export default function Shop() {
                                         <div className={styles.animation__desc}>
                                             <p>You need 3 stars to unlock!</p>
                                             <p>Try to score higher in the quiz!</p>
+                                            <div>
+                                            <Link href="quiz"><button>Go to Quiz</button></Link>
+                                                </div>
+                                           
                                         </div>
                                     )}
                                     {
@@ -183,9 +191,9 @@ export default function Shop() {
                                         <div>
                                             <div className={styles.animation__desc__sp}>
                                                 <p>Congradulation! </p>
-                                                <p>Your mascot has a new outfit!</p></div>
+                                                <p>Greenie has a new outfit!</p></div>
                                             <div className={styles.animation__btn}>
-                                                <Link href="/homepage"><button>Check Your Outfit</button></Link>
+                                                <Link href="/homepage"><button>Check the Outfit</button></Link>
                                                 <button onClick={handleView}>Go Back to Shop</button>
                                             </div>
                                         </div>)
@@ -195,10 +203,10 @@ export default function Shop() {
 
                         </div>
                         <div className={styles.reward__topItem}>
-                            <div className={styles.reward__imgbg}>
+                            <div className={styles.reward__imgbg} onClick={handleAnimation}>
                                 <Image src="/shop/reward-rain.png" width={95} height={155} alt="reward 1" />
                                 <div className={styles.reward__toplock}>
-                                <Image  src="/shop/lock.png" width={15} height={17} alt="lock" />
+                                    <Image src="/shop/lock.png" width={15} height={17} alt="lock" />
                                 </div>
                             </div>
                             <div className={styles.reward__btn}>
@@ -225,7 +233,7 @@ export default function Shop() {
                             <div className={styles.reward__botbg}>
                                 <Image src="/shop/color-orange.png" width={60} height={75} alt="mascot orange" />
                                 <div className={styles.reward__botlock}>
-                                <Image  src="/shop/lock.png" width={15} height={17} alt="lock" />
+                                    <Image src="/shop/lock.png" width={15} height={17} alt="lock" />
                                 </div>
                             </div>
                             <div>
@@ -237,7 +245,7 @@ export default function Shop() {
                             <div className={styles.reward__botbg}>
                                 <Image src="/shop/color-lightgreen.png" width={62} height={75} alt="mascot orange" />
                                 <div className={styles.reward__botlock}>
-                                <Image  src="/shop/lock.png" width={15} height={17} alt="lock" />
+                                    <Image src="/shop/lock.png" width={15} height={17} alt="lock" />
                                 </div>
                             </div>
                             <div>
@@ -260,7 +268,7 @@ export default function Shop() {
                             <div className={styles.reward__botbg}>
                                 <Image src="/shop/robotor-blue.png" width={60} height={60} alt="mascot orange" />
                                 <div className={styles.reward__botlock}>
-                                <Image  src="/shop/lock.png" width={15} height={17} alt="lock" />
+                                    <Image src="/shop/lock.png" width={15} height={17} alt="lock" />
                                 </div>
                             </div>
                             <div>
@@ -272,10 +280,10 @@ export default function Shop() {
                             <div className={styles.reward__botbg}>
                                 <Image src="/shop/robotor-green.png" width={60} height={60} alt="mascot orange" />
                                 <div className={styles.reward__botlock}>
-                                <Image  src="/shop/lock.png" width={15} height={17} alt="lock" />
+                                    <Image src="/shop/lock.png" width={15} height={17} alt="lock" />
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <button>Sunday</button>
                             </div>

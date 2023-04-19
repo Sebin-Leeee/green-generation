@@ -20,8 +20,8 @@ export default function NameMascot({skip,setSkip}) {
                     </div>
                    
                     <div className={styles.img}><Image src="/tutorial-mascot.png" alt="mascot image" width={200} height={215} /></div>
-                    <div className={styles.btn__l}><Link href="/name">Confirm</Link></div>
-                    <div className={styles.btn__l} onClick={handleBack}>Back</div>
+                    <div className={styles.btn__l}><Link href="/name">CONFIRM</Link></div>
+                    <div className={styles.btn__l} onClick={handleBack}>BACK</div>
                 </div>
          
         </>

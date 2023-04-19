@@ -81,7 +81,7 @@ export default function Homepage() {
             <div className={styles.reset__container}>
               <div className={styles.reset__btn}>
                 <button>
-                  <Image src="/flower.png" alt="reset mascot" width={20} height={20}
+                  <Image src="/flower.png" alt="reset mascot" width={25} height={25}
                     className={clicked ? `${styles.rotate}` : ''}
                     onClick={handleClick}
                   />

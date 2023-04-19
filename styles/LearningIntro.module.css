@@ -34,3 +34,6 @@
     position: fixed;
     bottom: 13%;
   }
+  .welcome{
+    z-index: 2;
+  }
