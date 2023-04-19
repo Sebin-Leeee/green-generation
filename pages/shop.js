@@ -14,6 +14,7 @@ export default function Shop() {
     const [animation, setAnimation] = useState(false);
     const [view, setView] = useState(false);
     const [error, setError] = useState(false);
+    const [score,setScore]  = useState(0);
     let animationContainer = createRef();
     let animationContainer2 = createRef();
     
@@ -38,8 +39,11 @@ export default function Shop() {
         })
         return () => anim2.destroy()
     })
+    useEffect (()=> {
+        const scores = parseInt(localStorage.getItem('quizScore') || 0);
+        setScore(scores)
+    })
 
-    const score = parseInt(localStorage.getItem('quizScore') || 0);
     let stars = 0;
     if (score >= 9) {
         stars = 3;
@@ -67,7 +71,6 @@ export default function Shop() {
     const handleRedeemReward = () => {
         if (stars === 3) {
             setRewardRedeemed(true);
-            localStorage.setItem('redeemed', 'true');
             router.push({
                 query: { rewardRedeemed: true }
             });
