@@ -16,3 +16,23 @@
     bottom: 33vh;
   }
 }
+
+.animation__container{
+  position: fixed;
+
+  animation: upAndDown2 1.2s ease-in-out infinite;
+  width: 240px;
+  height: 300px;
+}
+
+@keyframes upAndDown2 {
+  0% {
+    bottom: 30vh;
+  }
+  50% {
+    bottom: 29vh;
+  }
+  100% {
+    bottom: 30vh;
+  }
+}

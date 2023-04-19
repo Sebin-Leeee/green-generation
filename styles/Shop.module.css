@@ -1,6 +1,7 @@
 .main{
     background-color: #B5D8F4;
     min-height: 100vh;
+    
 }
 .main__container{
     padding-top: 5rem;
@@ -23,4 +24,106 @@
 }
 .shop__img{
     margin-left: -1rem;
+}
+
+.reward__topcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.75rem;
+    margin: 2rem;
+}
+.animation__bg{
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--off-white-60);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.animation__container{
+    height: 300px;
+   
+}
+.animation__desc{
+    width: 240px;
+}
+.animation__desc p{
+    text-align: center;
+    font-size: 1.0625rem;
+    color: var(--color--orange);
+}
+
+.animation__btn button{
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color--blue);
+    font-size: 1.375rem;
+    color: var(--off--white);
+    font-weight: bold;
+    cursor: pointer;
+}
+.animation__btn button:hover,
+.animation__btn button:active{
+    background-color: var(--color--orange);
+}
+.animation__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+.animation__desc__sp{
+    width: 250px;
+    padding-bottom: 1rem;
+}
+.animation__desc__sp p{
+    text-align: center;
+    font-size: 1.0625rem;
+    color: var(--frog--green);
+}
+.reward__topItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.reward__btn button{
+    background-color: var(--color--blue);
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--off--white);
+    cursor: pointer;
+}
+.reward__imgbg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 210px;
+    border-radius: 20px;
+    background-color: rgba(250, 249, 246, 0.5);
+}
+
+.reward__btn__sp button{
+    background-color: var(--color--orange);
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--off--white);
+    cursor: pointer;
 }

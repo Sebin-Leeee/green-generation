@@ -50,6 +50,7 @@
 .delay__container a{
   text-decoration: none;
 }
+
 @keyframes condemned_blink_effect {
   0% {
     opacity: 0;

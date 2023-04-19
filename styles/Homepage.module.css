@@ -18,3 +18,115 @@
   position: fixed;
   bottom: 13%;
 }
+
+.reset__container{
+  position: relative;
+  top: 55px;
+  left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.reset__btn button{
+background-color: transparent;
+border: none;
+}
+
+.rotate{
+  animation: rotate 2s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.reset__overlay{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.reset__overlay button{
+  background-color: var(--color--orange);
+  border: 0.1rem solid var(--color--orange);
+  border-radius: 20px;
+  width: 3rem;
+  color: white;
+}
+.reset__overlay button:disabled{
+  background-color: transparent;
+  border: none;
+  color: transparent;
+}
+.reset__overlay__animation {
+  transform: translateY(-100%);
+  animation-name: show-from-top;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show-from-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.confirm__bg{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--off-white-60);
+  z-index: 5;
+  left: 0;
+  top: 0;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+.confirm__container{
+  width: 300px;
+  height: 180px;
+  background-color: var(--off--white);
+  border: 4px solid var(--frog--green);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+.confirm__container p{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.0625rem;
+  font-weight: bold;
+}
+.confirm__btn{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.confirm__btn button{
+  background-color: var(--color--blue);
+  width: 250px;
+  height: 30px;
+border: none;
+border-radius: 10px;
+color: white;
+}

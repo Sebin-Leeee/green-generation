@@ -34,11 +34,11 @@ export default function NavBarHome() {
                   </li>
 
                   <li className={styles.icon_text}>
-                      <Link href="/tutorialHome"><Image className={styles.tutorial}
+                      <Link href="/more"><Image className={styles.tutorial}
                           src={tutorialIcon}
                           width={30}
                           height={20} /></Link>
-                      <Link href="/tutorialHome">Tutorial</Link>
+                      <Link href="/tutorialHome">More</Link>
                   </li>
               </ul>
           </div>

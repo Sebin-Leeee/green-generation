@@ -8,18 +8,60 @@ import StartLearnBtn from '@/components/Buttons/startLearnBtn'
 import StartQuizBtn from '@/components/Buttons/startQuizBtn'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Homepage() {
   const router = useRouter();
   const { rewardRedeemed } = router.query;
   const [redeemed, setRedeemed] = useState(false);
+  const [clicked, setClicked] = useState(false);
+  const [confirm, setConfirm] = useState(false);
 
   useEffect(() => {
     const redeemed = localStorage.getItem('redeemed');
     if (redeemed === 'true') {
       setRedeemed(true);
+    } else {
+      localStorage.setItem('redeemed', 'false');
+      setRedeemed(false);
     }
+
+    const handleBeforeUnload = () => {
+      localStorage.setItem('redeemed', 'false');
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+
   }, []);
+
+  const handleReset = () => {
+    localStorage.setItem('redeemed', 'null');
+    setRedeemed(null);
+    handleConfirm(false);
+    setClicked(false);
+  };
+
+  const handleClick = () => {
+    if (clicked === false) {
+      setClicked(true);
+    } else {
+      setClicked(false)
+    }
+  }
+
+  const handleConfirm = () => {
+    if (confirm === false) {
+      setConfirm(true);
+    } else {
+      setConfirm(false)
+    }
+  }
+
+
   return (
     <>
       <Head>
@@ -33,10 +75,52 @@ export default function Homepage() {
         <HomeTextBox />
         <HomeMascot rewardRedeemed={rewardRedeemed || redeemed} />
         <div className={styles.buttons}>
-        <StartLearnBtn />
-        <StartQuizBtn />
+          <StartLearnBtn />
+          <StartQuizBtn />
         </div>
-        <NavBarHome/>
+            <div className={styles.reset__container}>
+              <div className={styles.reset__btn}>
+                <button>
+                  <Image src="/flower.png" alt="reset mascot" width={20} height={20}
+                    className={clicked ? `${styles.rotate}` : ''}
+                    onClick={handleClick}
+                  />
+                </button>
+              </div>
+              <div className={clicked ? `${styles.reset__overlay__animation}` : ``}>
+                {clicked && (
+                  <>
+                    <div className={styles.reset__overlay}>
+                      <Link href="/shop">
+                        <button>Shop</button>
+                      </Link>
+                      <button onClick={handleConfirm} disabled={!redeemed}>Reset</button>
+
+                    </div>
+                  </>
+
+                )}
+              </div>
+              {
+                confirm && (
+                  <div className={styles.confirm__bg}>
+                    <div className={styles.confirm__container}>
+                      <p>Do you confirm to reset the mascot outfit? If yes, you won't be able to switch back to the redeemed outfit.</p>
+                      <div className={styles.confirm__btn}>
+                        <button onClick={handleConfirm}>No, I want to keep the outfit.</button>
+                        <button onClick={handleReset}>Yes, I want to change to the original outfit.</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                )
+              }
+
+            </div>
+         
+
+        <NavBarHome />
       </main>
     </>
   )

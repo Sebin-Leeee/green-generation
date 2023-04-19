@@ -30,7 +30,7 @@ export default function Answer(props) {
 
     const handleSubmit = () => {
         props.onSubmit(scores, selectedAnswers);
-        router.push("/shop?score=" + scores);
+        localStorage.setItem('quizScore', scores);
     };
 
     const handleSelectAnswer = (index) => {

@@ -15,7 +15,7 @@ export default function TutorialMascot({
                             {text}
                         </p>
                     </div>
-                    <div className={styles.img}><Image src="/tutorial-mascot.png" alt="mascot image" width={200} height={215} /></div>
+                    <div className={styles.img}><Image src="/tutorial-mascot.png" alt="mascot image" width={200} height={225} /></div>
 
                 </div>
             )}
