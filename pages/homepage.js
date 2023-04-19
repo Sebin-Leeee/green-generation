@@ -105,10 +105,10 @@ export default function Homepage() {
                 confirm && (
                   <div className={styles.confirm__bg}>
                     <div className={styles.confirm__container}>
-                      <p>Do you confirm to reset the mascot outfit? If yes, you won't be able to switch back to the redeemed outfit.</p>
+                      <p>Want to reset the mascot outfit? You will lose the current outfit.</p>
                       <div className={styles.confirm__btn}>
-                        <button onClick={handleConfirm}>No, I want to keep the outfit.</button>
-                        <button onClick={handleReset}>Yes, I want to change to the original outfit.</button>
+                        <button onClick={handleConfirm}>No, keep the outfit.</button>
+                        <button onClick={handleReset}>Yes, change to original.</button>
                       </div>
 
                     </div>

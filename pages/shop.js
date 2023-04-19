@@ -14,10 +14,10 @@ export default function Shop() {
     const [animation, setAnimation] = useState(false);
     const [view, setView] = useState(false);
     const [error, setError] = useState(false);
-    const [score,setScore]  = useState(0);
+    const [score, setScore] = useState(0);
     let animationContainer = createRef();
     let animationContainer2 = createRef();
-    
+
     useEffect(() => {
         const anim = lottie.loadAnimation({
             container: animationContainer.current,
@@ -28,7 +28,7 @@ export default function Shop() {
         })
         return () => anim.destroy()
     })
-    
+
     useEffect(() => {
         const anim2 = lottie.loadAnimation({
             container: animationContainer2.current,
@@ -39,7 +39,7 @@ export default function Shop() {
         })
         return () => anim2.destroy()
     })
-    useEffect (()=> {
+    useEffect(() => {
         const scores = parseInt(localStorage.getItem('quizScore') || 0);
         setScore(scores)
     })
@@ -138,7 +138,7 @@ export default function Shop() {
 
                     </div>
                 </div>
-                <div>
+                <div className={styles.reward__grid}>
                     <div className={styles.reward__topcontainer}>
                         <div className={styles.reward__topItem}>
                             <div className={styles.reward__imgbg}>
@@ -149,16 +149,16 @@ export default function Shop() {
                             {
                                 !rewardRedeemed && (
                                     <div className={styles.reward__btn}>
-                                    <button onClick={handleView}>View & Redeem</button>
-                                </div>
+                                        <button onClick={handleView}>View & Redeem</button>
+                                    </div>
                                 )
                             }
                             {rewardRedeemed && (
                                 <div className={styles.reward__btn__sp}>
-                                <button onClick={handleView}>Redeemed</button>
-                            </div>
+                                    <button onClick={handleView}>Redeemed</button>
+                                </div>
                             )}
-                            
+
 
                             {view && (
                                 <div className={styles.animation__bg}>
@@ -174,7 +174,7 @@ export default function Shop() {
                                         !rewardRedeemed && (
                                             <div className={styles.animation__btn}>
                                                 <button onClick={handleRedeemReward}>Redeem Reward</button>
-                                                <button onClick={handleView}>Check Other Outfits</button>
+                                                <button onClick={handleView}>Go Back to Shop</button>
                                             </div>
                                         )
                                     }
@@ -186,7 +186,7 @@ export default function Shop() {
                                                 <p>Your mascot has a new outfit!</p></div>
                                             <div className={styles.animation__btn}>
                                                 <Link href="/homepage"><button>Check Your Outfit</button></Link>
-                                                <button onClick={handleView}>Check Other Outfits</button>
+                                                <button onClick={handleView}>Go Back to Shop</button>
                                             </div>
                                         </div>)
                                     }
@@ -197,6 +197,9 @@ export default function Shop() {
                         <div className={styles.reward__topItem}>
                             <div className={styles.reward__imgbg}>
                                 <Image src="/shop/reward-rain.png" width={95} height={155} alt="reward 1" />
+                                <div className={styles.reward__toplock}>
+                                <Image  src="/shop/lock.png" width={15} height={17} alt="lock" />
+                                </div>
                             </div>
                             <div className={styles.reward__btn}>
                                 <button onClick={handleAnimation}>Preview Outfit</button>
@@ -216,7 +219,77 @@ export default function Shop() {
 
 
                     </div>
+                    <div className={styles.reward__botContainer}>
 
+                        <div className={styles.reward__botItem}>
+                            <div className={styles.reward__botbg}>
+                                <Image src="/shop/color-orange.png" width={60} height={75} alt="mascot orange" />
+                                <div className={styles.reward__botlock}>
+                                <Image  src="/shop/lock.png" width={15} height={17} alt="lock" />
+                                </div>
+                            </div>
+                            <div>
+                                <button>Monday</button>
+                            </div>
+                        </div>
+
+                        <div className={styles.reward__botItem}>
+                            <div className={styles.reward__botbg}>
+                                <Image src="/shop/color-lightgreen.png" width={62} height={75} alt="mascot orange" />
+                                <div className={styles.reward__botlock}>
+                                <Image  src="/shop/lock.png" width={15} height={17} alt="lock" />
+                                </div>
+                            </div>
+                            <div>
+                                <button>Tuesday</button>
+                            </div>
+                        </div>
+
+                        <div className={styles.reward__botItem}>
+                            <div className={styles.reward__botbg}>
+                                <Image src="/shop/color-coming.png" width={62} height={75} alt="mascot orange" />
+                            </div>
+                            <div>
+                                <button>Coming Soon</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.reward__botContainer}>
+
+                        <div className={styles.reward__botItem}>
+                            <div className={styles.reward__botbg}>
+                                <Image src="/shop/robotor-blue.png" width={60} height={60} alt="mascot orange" />
+                                <div className={styles.reward__botlock}>
+                                <Image  src="/shop/lock.png" width={15} height={17} alt="lock" />
+                                </div>
+                            </div>
+                            <div>
+                                <button>Saturday</button>
+                            </div>
+                        </div>
+
+                        <div className={styles.reward__botItem}>
+                            <div className={styles.reward__botbg}>
+                                <Image src="/shop/robotor-green.png" width={60} height={60} alt="mascot orange" />
+                                <div className={styles.reward__botlock}>
+                                <Image  src="/shop/lock.png" width={15} height={17} alt="lock" />
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <button>Sunday</button>
+                            </div>
+                        </div>
+
+                        <div className={styles.reward__botItem}>
+                            <div className={styles.reward__botbg}>
+                                <Image src="/shop/robotor-coming.png" width={60} height={60} alt="mascot orange" />
+                            </div>
+                            <div>
+                                <button>Coming Soon</button>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 

@@ -17,37 +17,40 @@ export default function More() {
             </Head>
             <main className={styles.main}>
                 <TopBar />
-                <div className={styles.main__container}>
-                    <div className={styles.grid__item__1}>
-                        <div className={styles.btn__container}>
-                            <div className={`${styles.btn__circle} ${styles.first}`}>
-                                <Link href="tutorialHome">Tutorial</Link>
+                <div className={styles.container}>
+                    <div className={styles.main__container}>
+                        <div className={styles.grid__item__1}>
+                            <div className={styles.btn__container}>
+                                <div className={`${styles.btn__circle} ${styles.first}`}>
+                                    <Link href="tutorialHome">Tutorial</Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.grid__item__2}>
-                        <div className={styles.btn__container}>
-                            <div className={`${styles.btn__circle} ${styles.first}`}>
-                                <Link href="shop">Shop</Link>
+                        <div className={styles.grid__item__2}>
+                            <div className={styles.btn__container}>
+                                <div className={`${styles.btn__circle} ${styles.first}`}>
+                                    <Link href="shop">Shop</Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.grid__item__3}>
-                        <div className={styles.btn__container}>
-                            <div className={`${styles.btn__circle} ${styles.first}`}>
-                                <Link href="">Term</Link>
+                        <div className={styles.grid__item__3}>
+                            <div className={styles.btn__container}>
+                                <div className={`${styles.btn__circle} ${styles.first}`}>
+                                    <Link href="">Term</Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.grid__item__4}>
-                        <div className={styles.btn__container}>
-                            <div className={`${styles.btn__circle} ${styles.first}`}>
-                                <Link href="">About</Link>
+                        <div className={styles.grid__item__4}>
+                            <div className={styles.btn__container}>
+                                <div className={`${styles.btn__circle} ${styles.first}`}>
+                                    <Link href="">About</Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
+
 
                 <NavBarTutorial />
             </main>
