@@ -25,15 +25,13 @@
        flex-direction: column;
        justify-content: center;
        align-items: center;
+       
        font-size: 14px;
        color: rgba(0,0,0,0.5);
+   
    }
    
-.learn{
-    margin-bottom: 3px;
-}
-
-.more{
-    margin-top: 6.5px;
-    margin-bottom: 8px;
-}
+   .learn, 
+   .tutorial{
+       margin-bottom: 3px;
+   }

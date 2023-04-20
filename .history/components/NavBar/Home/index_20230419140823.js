@@ -13,7 +13,6 @@ export default function NavBarHome() {
               <ul className={styles.icon_list}>
                   <li className={styles.icon_text}>
                       <Link href="/homepage"><Image src={homeIcon}
-                          alt={homeIcon}
                           width={30}
                           height={26} /></Link>
                       <Link href="/homepage">Home</Link>
@@ -21,7 +20,6 @@ export default function NavBarHome() {
 
                   <li className={styles.icon_text}>
                       <Link href="/learningIntro"><Image className={styles.learn}
-                          alt={learnIcon}
                           src={learnIcon}
                           width={30}
                           height={20} /></Link>
@@ -30,7 +28,6 @@ export default function NavBarHome() {
 
                   <li className={styles.icon_text}>
                       <Link href="/quiz"><Image src={quizIcon}
-                          alt={quizIcon}
                           width={30}
                           height={26} /></Link>
                       <Link href="/quiz">Quiz</Link>
@@ -39,7 +36,6 @@ export default function NavBarHome() {
                   <li className={styles.icon_text}>
                       <Link href="/more"><Image className={styles.more}
                           src={moreIcon}
-                          alt={moreIcon}
                           width={35}
                           height={9} /></Link>
                       <Link href="/more">More</Link>

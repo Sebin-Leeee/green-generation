@@ -29,11 +29,7 @@
     color: rgba(0,0,0,0.5);
 }
 
-.learn{
+.learn, 
+.tutorial{
     margin-bottom: 3px;
-}
-
-.more{
-    margin-top: 6.5px;
-    margin-bottom: 8px;
 }
