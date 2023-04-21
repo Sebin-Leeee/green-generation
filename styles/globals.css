@@ -56,18 +56,18 @@ a {
 }
 
 h2{
-  font-size: 22pt;
+  font-size: 20pt;
   font-family: var(--font-mono);
   font-weight: 700;
 }
 h3{
   font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 20pt;
+  font-size: 19pt;
 }
 
 p{
-  font-size: 14.5pt;
+  font-size: 14pt;
   font-family: var(--font-mono);
   font-weight: 400;
 }

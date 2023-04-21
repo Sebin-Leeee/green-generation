@@ -12,6 +12,7 @@ export default function Content2() {
         primarily carbon dioxide, 
 that are released into the atmosphere as a result of human activities 
 such as transportation, energy use, and consumption of goods and services.
+This includes <span>indirect emissions</span> from the production and transportation of goods used by individuals or organizations.
         </p>
     </div>
     </div>

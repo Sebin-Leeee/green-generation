@@ -6,21 +6,24 @@ import Image from 'next/image'
 import React, { useState } from 'react';
 import BusNoBg from '../../../public/learning/buswoback.png'
 import PlantsNoBg from '../../../public/learning/plants.png'
+import CupNoBg from '../../../public/learning/cupwobk.png'
 import Food from '../../../public/learning/plantbased.png'
+import Cup from '../../../public/learning/cup.png'
 
 export default function Content3() {
   const [showBusExplanation, setShowBusExplanation] = useState(false);
   const [showMeatExplanation, setShowMeatExplanation] = useState(false);
   const [showTreeExplanation, setShowTreeExplanation] = useState(false);
+  const [showCupExplanation, setShowCupExplanation] = useState(false);
 
   return (
     <>
     <div className={styles.container}>
-      <h2>3. How to reduce<br/> Carbon Footprint?</h2>
+      <h2 className={styles.title}>3. How to reduce<br/> <span>Carbon Footprint?</span></h2>
       <p className={styles.details}>Click to see details.</p>
       <div className={styles.images}>
         <div className={styles.imageContainer}>
-          <Image src={Bus} width={90} height={90} onClick={() => setShowBusExplanation(true)} />
+          <Image src={Bus} width={125} height={110} onClick={() => setShowBusExplanation(true)} />
           {showBusExplanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox}>
@@ -33,14 +36,14 @@ export default function Content3() {
                  trips, they require the production and maintenance of bicycles and infrastructure, 
                  which can have a carbon footprint.</p>
                 
-                <Image className={styles.moving_bus} src={BusNoBg} width={130} height={50}/>
+                <Image className={styles.moving_bus} src={BusNoBg} width={190} height={75}/>
                 </div>
               </div>
             </div>
           )}
         </div>
         <div className={styles.imageContainer}>
-          <Image src={Meat} width={90} height={90} onClick={() => setShowMeatExplanation(true)} />
+          <Image src={Meat} width={125} height={110} onClick={() => setShowMeatExplanation(true)} />
           {showMeatExplanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox}>
@@ -59,7 +62,7 @@ export default function Content3() {
           )}
         </div>
         <div className={styles.imageContainer}>
-          <Image src={Tree} width={90} height={90} onClick={() => setShowTreeExplanation(true)} />
+          <Image src={Tree} width={125} height={110} onClick={() => setShowTreeExplanation(true)} />
           {showTreeExplanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox}>
@@ -71,6 +74,24 @@ export default function Content3() {
                     In addition to absorbing carbon dioxide, trees provide a number of other important environmental benefits, such as preventing soil erosion, 
                     supporting biodiversity, and improving air quality.</p>
                 <Image className={styles.plants} src={PlantsNoBg} width={290} height={130}/>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+        <div className={styles.imageContainer}>
+          <Image src={Cup} width={125} height={110} onClick={() => setShowCupExplanation(true)} />
+          {showCupExplanation && (
+            <div className={styles.overlay}>
+              <div className={styles.explanationBox}>
+              <button className={styles.closeButton} onClick={() => setShowCupExplanation(false)}>x</button>
+              <div className={styles.textContainer}>
+                <h3>4. Use Reusable Cup</h3>
+                <p> Trees absorb carbon dioxide from the atmosphere, so planting trees 
+                    or supporting reforestation efforts can help reduce your carbon footprint.
+                    In addition to absorbing carbon dioxide, trees provide a number of other important environmental benefits, such as preventing soil erosion, 
+                    supporting biodiversity, and improving air quality.</p>
+                <Image className={styles.cups} src={CupNoBg} width={150} height={140}/>
                 </div>
               </div>
             </div>

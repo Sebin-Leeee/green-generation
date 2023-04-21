@@ -22,17 +22,17 @@ export default function Resources() {
     <ReviewBtn className={styles.back}/>
     <NavBarLearning />
     <div className={styles.container}>
-      <h2>Want to learn<br/>more terminologies</h2>
+      <h2 className={styles.title}>Do you want to<br/>learn more?</h2>
       <p>Click to see details.</p>
       <div className={styles.images}>
         <div className={styles.imageContainer}>
-          <div className={styles.topic} onClick={() => setShow1Explanation(true)}><p>1. Greenhouse Gases</p></div> 
+          <div className={styles.topic} onClick={() => setShow1Explanation(true)}><p>Greenhouse Gases</p></div> 
           {show1Explanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox}>
                 <button className={styles.closeButton} onClick={() => setShow1Explanation(false)}>x</button>
                 <div className={styles.textContainer}>
-                <h3>1. Greenhouse Gases</h3>
+                <h3>Greenhouse Gases</h3>
                 <p> These are gases that trap heat in the atmosphere, contributing to global warming. 
                     Examples include carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O).</p>
                 </div>
@@ -41,13 +41,13 @@ export default function Resources() {
           )}
         </div>
         <div className={styles.imageContainer}>
-         <div className={styles.topic} onClick={() => setShow2Explanation(true)}><p>2. Carbon Credits</p></div>
+         <div className={styles.topic} onClick={() => setShow2Explanation(true)}><p>Carbon Credits</p></div>
           {show2Explanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox}>
               <button className={styles.closeButton} onClick={() => setShow2Explanation(false)}>x</button>
               <div className={styles.textContainer}>
-                <h3>2. Carbon Credits</h3>
+                <h3>Carbon Credits</h3>
                 <p> These are a type of tradable permit that allows organizations to offset their carbon emissions by supporting projects 
                     that reduce greenhouse gas emissions, such as renewable energy or reforestation.</p>
                 </div>
@@ -55,46 +55,15 @@ export default function Resources() {
             </div>
           )}
         </div>
-        <div className={styles.imageContainer}>
-          <div className={styles.topic} onClick={() => setShow3Explanation(true)}><p>3. Ecological Footprint</p></div>
-          {show3Explanation && (
-            <div className={styles.overlay}>
-              <div className={styles.explanationBox}>
-              <button className={styles.closeButton} onClick={() => setShow3Explanation(false)}>x</button>
-              <div className={styles.textContainer}>
-                <h3>3. Ecological Footprint</h3>
-                <p>  This is a measure of the impact of human activities on the environment,
-                     including the amount of land, water, and other resources required to support our lifestyles. </p>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
 
         <div className={styles.imageContainer}>
-          <div className={styles.topic} onClick={() => setShow4Explanation(true)}><p>4. Energy Efficiency</p></div>
-          {show4Explanation && (
-            <div className={styles.overlay}>
-              <div className={styles.explanationBox}>
-              <button className={styles.closeButton} onClick={() => setShow4Explanation(false)}>x</button>
-              <div className={styles.textContainer}>
-                <h3>4. Energy Efficiency</h3>
-                <p> This refers to practices and technologies that reduce energy consumption, 
-                    such as using energy-efficient appliances or insulating buildings.</p>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-
-        <div className={styles.imageContainer}>
-          <div className={styles.topic} onClick={() => setShow5Explanation(true)}><p>5. Renewable Energy</p></div>
+          <div className={styles.topic} onClick={() => setShow5Explanation(true)}><p>Renewable Energy</p></div>
           {show5Explanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox}>
               <button className={styles.closeButton} onClick={() => setShow5Explanation(false)}>x</button>
               <div className={styles.textContainer}>
-                <h3>5. Renewable Energy</h3>
+                <h3>Renewable Energy</h3>
                 <p>This is energy that is generated from sources that do not deplete natural resources, 
                     such as solar, wind, and hydropower.</p>
                 </div>
@@ -104,13 +73,13 @@ export default function Resources() {
         </div>
 
         <div className={styles.imageContainer}>
-          <div className={styles.topic} onClick={() => setShow6Explanation(true)}><p>6. Circular Economy</p></div>
+          <div className={styles.topic} onClick={() => setShow6Explanation(true)}><p>Circular Economy</p></div>
           {show6Explanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox6}>
               <button className={styles.closeButton} onClick={() => setShow6Explanation(false)}>x</button>
               <div className={styles.textContainer6}>
-                <h3>6. Global CO2 emissions chart</h3>
+                <h3>Global CO2 emissions chart</h3>
                 <p>line</p>
                 <LineChart />
                 </div>
