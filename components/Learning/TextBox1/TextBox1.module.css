@@ -26,3 +26,18 @@
     line-height: 180%;
 }
 
+.cloud{
+    z-index: 0;
+    left: -100px; 
+    animation: moveCloud 8s linear infinite; 
+    margin-bottom: 8vh;
+}
+@keyframes moveCloud {
+  0% {
+    transform: translateX(-100px); 
+  }
+  100% {
+    transform: translateX(200px); 
+  }
+}
+

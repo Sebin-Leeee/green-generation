@@ -1,5 +1,6 @@
 .chatboxContainer{
-    margin-top: 4vh;
+    position: absolute;
+    top: 15%;
 }
 .chatbox {
     position: relative;
@@ -37,5 +38,19 @@
     text-align: center;
     color: var(--dark--olive);
     line-height: 1.4;
+}
+
+.cloud{
+    z-index: 0;
+    left: -100px; 
+    animation: moveCloud 8s linear infinite; 
+}
+@keyframes moveCloud {
+  0% {
+    transform: translateX(-100px); 
+  }
+  100% {
+    transform: translateX(200px); 
+  }
 }
   

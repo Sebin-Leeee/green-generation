@@ -5,7 +5,7 @@
     padding: 6rem;
     min-height: 100vh;
     background-color: var(--color--lightgreen);
-    background-image: url(../public/learning/background2.png);
+    background-image: url(../public/learning/Variant3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -97,8 +97,8 @@ cursor: pointer;
   left: 0;
   top: 0;
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .confirm__container{
   width: 300px;
@@ -130,8 +130,20 @@ justify-content: center;
   background-color: var(--color--blue);
   width: 250px;
   height: 30px;
-border: none;
-border-radius: 10px;
-color: white;
-cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
 }
+.imageContainer{
+  top: 5%;
+}
+.textBox{
+  z-index: 2;
+  position: absolute;
+}
+
+
+
+
+

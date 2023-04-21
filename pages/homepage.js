@@ -72,8 +72,11 @@ export default function Homepage() {
       </Head>
       <main className={styles.main}>
         <TopBar />
-        <HomeTextBox />
-        <HomeMascot rewardRedeemed={rewardRedeemed || redeemed} />
+         <div className={styles.imageContainer}>
+        <HomeTextBox className={styles.textBox}/>
+        </div>
+    
+        <HomeMascot className={styles.mascot}rewardRedeemed={rewardRedeemed || redeemed} />
         <div className={styles.buttons}>
           <StartLearnBtn />
           <StartQuizBtn />
