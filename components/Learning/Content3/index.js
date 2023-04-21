@@ -4,6 +4,9 @@ import Meat from '../../../public/learning/meat.png'
 import Tree from '../../../public/learning/tree.png'
 import Image from 'next/image'
 import React, { useState } from 'react';
+import BusNoBg from '../../../public/learning/buswoback.png'
+import PlantsNoBg from '../../../public/learning/plants.png'
+import Food from '../../../public/learning/plantbased.png'
 
 export default function Content3() {
   const [showBusExplanation, setShowBusExplanation] = useState(false);
@@ -23,8 +26,14 @@ export default function Content3() {
               <div className={styles.explanationBox}>
                 <button className={styles.closeButton} onClick={() => setShowBusExplanation(false)}>x</button>
                 <div className={styles.textContainer}>
-                <h3>Use public transportation or carpool</h3>
-                <p>Take the bus, train, or subway instead of driving, or consider carpooling with friends or coworkers to reduce emissions.</p>
+                <h3>1. Use public transportation</h3>
+                <p>Take the bus, shared bike, or skytrain to reduce emissions.
+                Buses generally have a lower carbon footprint than shared bikes due to their larger carrying 
+                capacity and more fuel-efficient engines. While bike-sharing programs are still a great option for short
+                 trips, they require the production and maintenance of bicycles and infrastructure, 
+                 which can have a carbon footprint.</p>
+                
+                <Image className={styles.moving_bus} src={BusNoBg} width={130} height={50}/>
                 </div>
               </div>
             </div>
@@ -37,9 +46,13 @@ export default function Content3() {
               <div className={styles.explanationBox}>
               <button className={styles.closeButton} onClick={() => setShowMeatExplanation(false)}>x</button>
               <div className={styles.textContainer}>
-                <h3>Reduce meat consumption</h3>
-                <p> Livestock farming is a significant contributor to greenhouse gas emissions, so reducing meat consumption or switching 
-                    to a plant-based diet can help reduce your carbon footprint.</p>
+                <h3>2. Reduce meat consumption</h3>
+                <p> Livestock farming is a significant contributor to greenhouse gas emissions.
+                  Reducing meat consumption or switching 
+                    to a plant-based diet can help reduce your carbon footprint.
+                    consider reducing your meat consumption by incorporating more vegetarian or vegan meals into your diet. 
+                    You could start with one or two meals a week and gradually increase from there.</p>
+                <Image className={styles.food} src={Food} width={160} height={85}/>
                 </div>
               </div>
             </div>
@@ -52,9 +65,12 @@ export default function Content3() {
               <div className={styles.explanationBox}>
               <button className={styles.closeButton} onClick={() => setShowTreeExplanation(false)}>x</button>
               <div className={styles.textContainer}>
-                <h3>Plant trees</h3>
+                <h3>3. Plant trees</h3>
                 <p> Trees absorb carbon dioxide from the atmosphere, so planting trees 
-                    or supporting reforestation efforts can help reduce your carbon footprint.</p>
+                    or supporting reforestation efforts can help reduce your carbon footprint.
+                    In addition to absorbing carbon dioxide, trees provide a number of other important environmental benefits, such as preventing soil erosion, 
+                    supporting biodiversity, and improving air quality.</p>
+                <Image className={styles.plants} src={PlantsNoBg} width={290} height={130}/>
                 </div>
               </div>
             </div>

@@ -1,7 +1,7 @@
 
 .container{
     width:320px;
-    height: 410px;
+    height: 420px;
     background-color: var(--color--white);
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0; /* Green with 50% opacity */
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,23 +32,24 @@
   
   .explanationBox {
     background-color: var(--color--frog-green);
+    margin-top: 40px;
     width: 320px;
-    height: 410px;
-    padding-right: 30px;
-    padding-left: 30px;
+    height: 550px;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-bottom: 30px;
     border-radius: 50px;
     position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    justify-content:flex-start;
+    gap: 10px;
   }
 
   .textContainer{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
     color: var(--color--white);
   }
 
@@ -56,7 +57,48 @@
     background-color: transparent;
     border: transparent;
     color: var(--color--white);
-    font-size: 24px;
+    font-size: 50px;
     position:relative;
-    left: 100px;
+    left: 120px;
+    top: 10px;
+  }
+
+  .moving_bus{
+    animation-name: slideRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    margin-top: 20px;
+  }
+  @keyframes slideRight {
+    from {
+      transform: translateX(110%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .plants{
+    padding-top: 15px;
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes opacity {
+    from {
+      opacity: 50%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+
+  .food{
+    margin-top: 0;
+    margin-left: 60px;
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
   }

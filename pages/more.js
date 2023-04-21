@@ -36,7 +36,7 @@ export default function More() {
                         <div className={styles.grid__item__3}>
                             <div className={styles.btn__container}>
                                 <div className={`${styles.btn__circle} ${styles.first}`}>
-                                    <Link href="">Term</Link>
+                                    <Link href="resources">Term</Link>
                                 </div>
                             </div>
                         </div>

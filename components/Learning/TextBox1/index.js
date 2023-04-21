@@ -11,7 +11,7 @@ export default function TextBox1() {
        <Image className={styles.cloud} src="/../public/learning/cloud.png" width={300} height={100} alt="cloud"/>
         <div className={styles.container}>
         <Username/>
-            <p className={styles.text}> We have 3 big topics to learn today!</p>
+            <p className={styles.text}> We have 3 big topics<br/>to learn today!</p>
         </div>
         
       </div>

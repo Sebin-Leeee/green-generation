@@ -2,8 +2,8 @@
 .container{
     width:320px;
     height: 410px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
     background-color: var(--color--white);
     display: flex;
     flex-direction: column;
@@ -20,3 +20,4 @@
 .detail span{
     color: var(--color--orange);
 }
+
