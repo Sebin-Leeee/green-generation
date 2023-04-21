@@ -1,12 +1,13 @@
 import styles from './TextBox.module.css'
 import Image from 'next/image';
+import cloud from '../../../public/learning/cloud.png'
 
 
 const HomeTextBox = () => {
 
     return (
         <>
-        <Image className={styles.cloud} src="/../public/learning/cloud.png" width={300} height={100} alt="cloud"/>
+        <Image className={styles.cloud} src={cloud} width={300} height={100} alt="cloud"/>
         <div className={styles.chatboxContainer}>
             <div className={styles.chatbox}>
                 <h2 className={styles.message}>Welcome to
