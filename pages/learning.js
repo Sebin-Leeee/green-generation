@@ -8,6 +8,7 @@ import Content3 from '@/components/Learning/Content3'
 import { useRouter } from 'next/router';
 import { useState } from 'react'
 import Image from 'next/image'
+import cloud from '../public/learning/cloud.png'
 
 export default function Learning() {
   const [contentIndex, setContentIndex] = useState(0);
@@ -45,7 +46,7 @@ export default function Learning() {
       <main className={styles.main} style={{ backgroundImage: `url(${bgImage})` }}>
         <TopBar />
         <div className={styles.container}>
-          <Image className={styles.cloud} src="/../public/learning/cloud.png" width={300} height={100} alt="cloud" />
+        <Image className={styles.cloud} src={cloud} width={300} height={100} alt="cloud"/>
           {contents[contentIndex]}
           <div className={styles.buttonContainer}>
             <button className={styles.button} onClick={handlePrev}>Back</button>
