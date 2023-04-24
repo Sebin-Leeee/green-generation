@@ -3,11 +3,51 @@ import TopBar from '@/components/TopBar';
 import NavBarQuiz from '@/components/NavBar/Quiz';
 import Image from 'next/image';
 import SelectedAnswer from '../SelectedAnswer';
+import lottie from 'lottie-web';
+import { createRef, useEffect } from 'react';
 
 
 export default function ResultsAlmost() {
 
+    let animationContainer = createRef();
+    let animationContainer2 = createRef();
+    let animationContainer3 = createRef();
 
+    useEffect(() => {
+        const anim = lottie.loadAnimation({
+            container: animationContainer.current,
+            renrender: "svg",
+            loop: true,
+            autoplay: true,
+            path: "/animation/Map.json",
+
+        });
+
+        const anim2 = lottie.loadAnimation({
+            container: animationContainer2.current,
+            renrender: "svg",
+            loop: true,
+            autoplay: true,
+            path: "/animation/Cup.json",
+
+        });
+
+        const anim3 = lottie.loadAnimation({
+            container: animationContainer3.current,
+            renrender: "svg",
+            loop: true,
+            autoplay: true,
+            path: "/animation/truck.json",
+
+        });
+
+        return () => {
+            anim.destroy(),
+            anim2.destroy(),
+            anim3.destroy()
+        
+        };
+    }, [])
 
     return (
         <>
@@ -27,6 +67,8 @@ export default function ResultsAlmost() {
                 </header>
 
                 <div className={styles.results_box}>
+
+                <div className={styles.animation_container} ref={animationContainer} />
 
                     <div className={styles.question_box}>
                         <SelectedAnswer answerID={1}/>
@@ -48,6 +90,8 @@ export default function ResultsAlmost() {
                         </p>
                     </div>
 
+                    <div className={styles.animation_container2} ref={animationContainer2} />
+
                     <div className={styles.question_box}>
                     <SelectedAnswer answerID={3}/>
                         <h3 className={styles.heading}>3. Getting Fruit From The Store</h3>
@@ -56,6 +100,9 @@ export default function ResultsAlmost() {
                             <br /> There is still a greener option to get your food.
                         </p>
                     </div>
+
+                    <div className={styles.animation_container3} ref={animationContainer3} />
+                    
                 </div>
 
                 

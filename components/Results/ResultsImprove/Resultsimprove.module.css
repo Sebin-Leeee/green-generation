@@ -8,10 +8,12 @@
 
 .results_box {
     padding-top: 3rem;
-    gap: 5rem;
+    gap: 14rem;
     display: flex;
     flex-direction: column;
     max-width: 16rem;
+    position: relative;
+    margin-bottom: 10rem;
 }
 
 .title_box {
@@ -23,9 +25,15 @@
 
 .question_box {
     padding: 1rem;
-    border-radius: 15px;
+    border-radius: 35px;
     color: var(--off--white);
     background-color: var(--sky--blue);
+    z-index: 1;
+}
+
+.desc {
+    padding-top: 1rem;
+    line-height: 150%;
 }
 
 .title {
@@ -57,7 +65,28 @@
     }
 }
 
-.desc {
-    padding-top: 1rem;
-    line-height: 150%;
+.animation_container {
+    width: 300px;
+    height: 600px;
+    left: 1.5em;
+    top: -1em;
+    image-rendering: crisp-edges;
+    position: absolute;
+    scale: 1.6;
+    transform: scaleX(-1);
+}
+
+.animation_container2 {
+    image-rendering: crisp-edges;
+    scale: 1.3;
+    top: 40em;
+    position: absolute;   
+}
+
+.animation_container3 {
+    image-rendering: crisp-edges;
+    scale: 1.6;
+    top: 87em;
+    right: 2rem;
+    position: absolute;   
 }
