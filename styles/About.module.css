@@ -1,14 +1,70 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+    background-color: var(--color--lightgreen);
+    background-image: url(../public/learning/bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    z-index: 1;
+} 
+.main h1{
+    margin-bottom: 32px;
+    position: absolute;
+    top: 11%;
+    z-index: 2;
+}
 .character_container{
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
+    width: 325px;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.749);
+    padding: 0.8rem;
+    border-radius: 30px;
+    margin-top: 8vh;
 }
-.main{
+.row{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-}   
+    gap: 30px;
+}
+.text h4{
+    margin-bottom: 10px;
+}
+.topBar{
+    z-index: 3;
+}
+.cloud{
+    position: absolute;
+    top: 5%;
+    z-index: 0;
+    opacity: 60%;
+    left: -100px; 
+    animation: moveCloud 8s linear infinite; 
+}
+@keyframes moveCloud {
+  0% {
+    transform: translateX(-100px); 
+  }
+  100% {
+    transform: translateX(200px); 
+  }
+}
+
+.team_image:hover {
+    animation: rotation 0.5s ease-in-out 2;
+  }
+  
+@keyframes rotation {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  

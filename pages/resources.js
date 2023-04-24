@@ -2,7 +2,7 @@ import styles from '../styles/Resources.module.css'
 import Image from 'next/image'
 import Head from "next/head";
 import React, { useState } from 'react';
-import NavBarLearning from '@/components/NavBar/Learning';
+import NavBarMore from '@/components/NavBar/More';
 import TopBar from '@/components/TopBar';
 import { PieChart } from '@/components/Learning/PieChart';
 import Wind from '../public/learning/wind.png'
@@ -20,7 +20,7 @@ export default function Resources() {
     <div className={styles.main}>
     <TopBar />
     <MoreBtn className={styles.back}/>
-    <NavBarLearning />
+    <NavBarMore />
     <div className={styles.container}>
       <h2 className={styles.title}>Do you want to<br/>learn more?</h2>
       <p>Click to see details.</p>

@@ -1,11 +1,11 @@
-import styles from '../Tutorial/NavBar.module.css'
+import styles from '../More/NavBar.module.css'
 import Image from 'next/image'
 import homeIcon from '../../../public/navbar_icon/home.png'
 import learnIcon from '../../../public/navbar_icon/learn.png'
 import quizIcon from '../../../public/navbar_icon/quiz.png'
 import moreIcon from '../../../public/navbar_icon/more_blue.png'
 import Link from 'next/link'
-export default function NavBarTutorial() {
+export default function NavBarMore() {
   return (
       <>
            <div className={styles.container}>

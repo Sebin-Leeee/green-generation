@@ -1,5 +1,5 @@
 import TopBar from "@/components/TopBar"
-import NavBarTutorial from "@/components/NavBar/Tutorial"
+import NavBarTutorial from "@/components/NavBar/More"
 import Head from "next/head"
 import Link from "next/link"
 import styles from '../styles/Shop.module.css'
