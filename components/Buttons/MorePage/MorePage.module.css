@@ -1,5 +1,5 @@
 .arrow{
-    transform: scaleX(-1);
+    
 }
 .button{
     display: flex;
@@ -8,10 +8,10 @@
     background-color: transparent;
     border: none;
     position: fixed;
-    left: 3.4vh;
+    right: 3.6vh;
     top: 11%;
-    background-color: var(--frog--green);
-    padding: 4.5px 8px;
+    background-color: var(--color--blue);
+    padding: 4px 8px;
     border-radius: 10px;
     color: var(--off--white)
 ;}

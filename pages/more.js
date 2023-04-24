@@ -43,7 +43,7 @@ export default function More() {
                         <div className={styles.grid__item__4}>
                             <div className={styles.btn__container}>
                                 <div className={`${styles.btn__circle} ${styles.first}`}>
-                                    <Link href="">About</Link>
+                                    <Link href="about">About</Link>
                                 </div>
                             </div>
                         </div>
