@@ -1,8 +1,4 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6rem;
     min-height: 100vh;
     background-color: var(--color--lightgreen);
     background-image: url(../public/learning/Variant3.png);
@@ -10,7 +6,12 @@
     background-position: center;
     background-size: cover;
 }
-
+.main__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+}
 .buttons{
   display: flex;
   flex-direction: column;

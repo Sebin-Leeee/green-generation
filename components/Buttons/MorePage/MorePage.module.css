@@ -9,9 +9,16 @@
     right: 3.6vh;
     top: 11%;
     background-color: var(--color--blue);
-    padding: 4px 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 8.5px;
+    padding-left: 10px;
     border-radius: 10px;
-    color: var(--off--white)
-;}
+    color: var(--off--white);
+    font-size: 11pt;
+}
+.arrow{
+    padding-top: 0.45vh;
+}
 
 

@@ -87,11 +87,13 @@ export default function Content3() {
               <button className={styles.closeButton} onClick={() => setShowCupExplanation(false)}>x</button>
               <div className={styles.textContainer}>
                 <h3>4. Use Reusable Cup</h3>
-                <p> Trees absorb carbon dioxide from the atmosphere, so planting trees 
-                    or supporting reforestation efforts can help reduce your carbon footprint.
-                    In addition to absorbing carbon dioxide, trees provide a number of other important environmental benefits, such as preventing soil erosion, 
-                    supporting biodiversity, and improving air quality.</p>
-                <Image className={styles.cups} src={CupNoBg} width={150} height={140} alt="cups"/>
+                <p> Using a reusable cup saves resources and energy because it eliminates the 
+                  need for producing, transporting, 
+                  and disposing of single-use cups. Disposable cups are not 
+                  recyclable due to their plastic lining, which means they can take up to
+                  500 years to decompose. By choosing to use a reusable cup, you
+                  are making a positive impact on the environment.</p>
+                <Image className={styles.cups} src={CupNoBg} width={110} height={100} alt="cups"/>
                 </div>
               </div>
             </div>

@@ -1,38 +1,45 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 6rem;
-    min-height: 100vh;
-    background-color: var(--color--lightgreen);
-    background-image: url(../public/learning/bg1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
+  min-height: 100vh;
+  background-color: var(--color--lightgreen);
+  background-image: url(../public/learning/bg1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.mascot_style{
-    position: fixed;
-    margin-left: 20px;
-    animation: upAndDown 1.2s ease-in-out infinite;
+
+.main__container {
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+}
+
+.mascot_style {
+  position: fixed;
+  margin-left: 20px;
+  animation: upAndDown 1.2s ease-in-out infinite;
 }
 
 @keyframes upAndDown {
   0% {
     bottom: 33vh;
   }
+
   50% {
     bottom: 32vh;
   }
+
   100% {
     bottom: 33vh;
   }
 }
 
-  .button{
-    position: fixed;
-    bottom: 13%;
-  }
-  .welcome{
-    z-index: 2;
-  }
+.button {
+  position: fixed;
+  bottom: 13%;
+}
+
+.welcome {
+  z-index: 2;
+}

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Arrow from '../../../public/learning/arrow.svg'
 
-const MoreBtn = () => {
+const ReviewBtn = () => {
 
   
   return (
@@ -12,10 +12,11 @@ const MoreBtn = () => {
                                     src={Arrow}
                                     width={18} 
                                     height={18}
+                                    alt="review"
                                     /></Link>
-      <Link href="/learning"><p>Review</p></Link>
+      <Link href="/learning">Review</Link>
     </button>
   );
 };
 
-export default MoreBtn;
+export default ReviewBtn;

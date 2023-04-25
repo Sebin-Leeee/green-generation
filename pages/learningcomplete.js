@@ -38,29 +38,31 @@ export default function LearningComplete() {
 
   return (
     <>
-   <Head>
+      <Head>
         <title>GREEN GENERATION</title>
-        <meta name="Learning" content="Green Generation - Learning Complete"/>
+        <meta name="Learning" content="Green Generation - Learning Complete" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
       <main className={styles.main}>
-        <TopBar />
-        <ReviewBtn className={styles.back}/>
-        <div className={styles.maincontents}>
-              <Component />
-              <Image className={styles.mascot_style}
-                src={mascot}
-                width={200}
-                alt='mascot' />
-         
-              <div className={styles.buttons}>
-                <StartQuizBtn />
-                <TermBtn />
-              </div>
+        <div className={styles.main__container}>
+          <TopBar />
+          <ReviewBtn className={styles.back} />
+          <div className={styles.maincontents}>
+            <Component />
+            <Image className={styles.mascot_style}
+              src={mascot}
+              width={200}
+              alt='mascot' />
+
+            <div className={styles.buttons}>
+              <StartQuizBtn />
+              <TermBtn />
+            </div>
+          </div>
+
+          <NavBarLearning />
         </div>
-        
-        <NavBarLearning />
       </main>
     </>
   )

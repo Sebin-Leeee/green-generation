@@ -40,16 +40,18 @@ export default function LearningInt() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <main className={styles.main}>
-        <TopBar />
-        <Current />
-            <Image className={styles.mascot_style} 
-              src={mascot}
-              width={200}
-              alt="leaning page mascot"/>
-              <div className={styles.button}><StartLearnBtn/></div>
-            
-    
-        <NavBarLearning/>
+        <div className={styles.main__container}>
+          <TopBar />
+          <Current />
+          <Image className={styles.mascot_style}
+            src={mascot}
+            width={200}
+            alt="leaning page mascot" />
+          <div className={styles.button}><StartLearnBtn /></div>
+
+
+          <NavBarLearning />
+        </div>
       </main>
     </>
   )

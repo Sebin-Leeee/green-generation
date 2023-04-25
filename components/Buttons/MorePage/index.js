@@ -5,15 +5,17 @@ import Arrow from '../../../public/learning/arrow.svg'
 
 const MoreBtn = () => {
 
-  
   return (
-    <button className={styles.button}>
-      <Link href="/more"><p>More Page</p></Link>
-      <Link href="/more"><Image className={styles.arrow}
-                                    src={Arrow}
-                                    width={18} 
-                                    height={18}
-                                    /></Link>
+    <button>
+      <div className={styles.button}>
+        <Link href="/more">More</Link>
+        <Link href="/more"><Image className={styles.arrow}
+          src={Arrow}
+          width={18}
+          height={18}
+          alt="more"
+        /></Link>
+      </div>
     </button>
   );
 };

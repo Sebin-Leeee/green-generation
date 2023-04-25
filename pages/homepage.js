@@ -71,59 +71,58 @@ export default function Homepage() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <main className={styles.main}>
-        <TopBar />
-         <div className={styles.imageContainer}>
-        <HomeTextBox className={styles.textBox}/>
-        </div>
-    
-        <HomeMascot className={styles.mascot}rewardRedeemed={rewardRedeemed || redeemed} />
-        <div className={styles.buttons}>
-          <StartLearnBtn />
-          <StartQuizBtn />
-        </div>
-            <div className={styles.reset__container}>
-              <div className={styles.reset__btn}>
-                <button>
-                  <Image src="/flower.png" alt="reset mascot" width={25} height={25}
-                    className={clicked ? `${styles.rotate}` : ''}
-                    onClick={handleClick}
-                  />
-                </button>
-              </div>
-              <div className={clicked ? `${styles.reset__overlay__animation}` : ``}>
-                {clicked && (
-                  <>
-                    <div className={styles.reset__overlay}>
-                      <Link href="/shop">
-                        <button>Shop</button>
-                      </Link>
-                      <button onClick={handleConfirm} disabled={!redeemed}>Reset</button>
+        <div className={styles.main__container}>
+          <TopBar />
+          <div className={styles.imageContainer}>
+            <HomeTextBox className={styles.textBox} />
+          </div>
 
-                    </div>
-                  </>
-
-                )}
-              </div>
-              {
-                confirm && (
-                  <div className={styles.confirm__bg}>
-                    <div className={styles.confirm__container}>
-                      <p>Want to reset Greenie's outfit? You will lose the current outfit.</p>
-                      <div className={styles.confirm__btn}>
-                        <button onClick={handleConfirm}>No, keep the outfit.</button>
-                        <button onClick={handleReset}>Yes, change to original.</button>
-                      </div>
-
-                    </div>
-                  </div>
-
-                )
-              }
-
+          <HomeMascot className={styles.mascot} rewardRedeemed={rewardRedeemed || redeemed} />
+          <div className={styles.buttons}>
+            <StartLearnBtn />
+            <StartQuizBtn />
+          </div>
+          <div className={styles.reset__container}>
+            <div className={styles.reset__btn}>
+              <button>
+                <Image src="/flower.png" alt="reset mascot" width={25} height={25}
+                  className={clicked ? `${styles.rotate}` : ''}
+                  onClick={handleClick}
+                />
+              </button>
             </div>
-         
+            <div className={clicked ? `${styles.reset__overlay__animation}` : ``}>
+              {clicked && (
+                <>
+                  <div className={styles.reset__overlay}>
+                    <Link href="/shop">
+                      <button>Shop</button>
+                    </Link>
+                    <button onClick={handleConfirm} disabled={!redeemed}>Reset</button>
 
-        <NavBarHome />
+                  </div>
+                </>
+
+              )}
+            </div>
+            {
+              confirm && (
+                <div className={styles.confirm__bg}>
+                  <div className={styles.confirm__container}>
+                    <p>Want to reset Greenie's outfit? You will lose the current outfit.</p>
+                    <div className={styles.confirm__btn}>
+                      <button onClick={handleConfirm}>No, keep the outfit.</button>
+                      <button onClick={handleReset}>Yes, change to original.</button>
+                    </div>
+
+                  </div>
+                </div>
+
+              )
+            }
+          </div>
+          <NavBarHome />
+        </div>
       </main>
     </>
   )
