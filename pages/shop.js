@@ -135,7 +135,7 @@ export default function Shop() {
                                     </>
                                 )}
                             </div>
-                            <Image className={styles.shop__img} src="/shop/Shop-Star.png" width={28} height={28} />
+                            <Image className={styles.shop__img} src="/shop/Shop-Star.png" width={28} height={28} alt="reward stars"/>
 
                         </div>
 

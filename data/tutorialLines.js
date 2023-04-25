@@ -17,7 +17,7 @@ export const tutorialLines = {
         },
         {
             id: 4,
-            text: "After you finish the learning page, you will be direct to the Quiz. Achieve high scores and redeem your rewards at shop!"
+            text: "After, you will be direct to the Quiz. Achieve high scores and redeem your rewards at shop!"
 
         },
         {

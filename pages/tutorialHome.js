@@ -37,7 +37,7 @@ export default function tutorialHome() {
 
                 <div className={styles.container}>
                     <div className={styles.link}>
-                        <Link href="/learning">
+                        <Link href="/more">
                             <p href="/quiz">Skip</p>
                         </Link>
 

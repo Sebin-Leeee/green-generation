@@ -3,12 +3,23 @@ import styles from '../Robotor/Robotor.module.css'
 export default function Robotor({
     question1,
     question2,
+    img
 }) {
 
     return (
         <>
             <div className={styles.questionContainer}>
-                <Image src="/robotor.png" alt="robotor image"width={100} height={100} />
+                <div
+                    style={{
+                        alt:"mascot",
+                        backgroundImage: "url(/Quiz/" + img + ".png)",
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                        width: 100,
+                        height: 100,
+                        marginBottom:'1rem',
+                    }} ></div>
             </div>
             <div className={styles.questionContainer}>
 

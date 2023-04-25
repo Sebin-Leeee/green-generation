@@ -21,8 +21,8 @@
 
 .reset__container{
   position: relative;
-  top: 55px;
-  left: 140px;
+  top: 155px;
+  left: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,6 +111,7 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 1rem;
   
 }
 .confirm__container p{

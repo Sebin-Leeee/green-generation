@@ -74,6 +74,7 @@ export default function Answer(props) {
                                         <Robotor
                                             question1={info.question1}
                                             question2={info.question2}
+                                            img={info.id}
                                         />
                                     </div>
                                     <div className={styles.question__div}>

@@ -23,7 +23,7 @@ export default function Content3() {
       <p className={styles.details}>Click to see details.</p>
       <div className={styles.images}>
         <div className={styles.imageContainer}>
-          <Image src={Bus} width={125} height={110} onClick={() => setShowBusExplanation(true)} />
+          <Image src={Bus} width={125} height={110} onClick={() => setShowBusExplanation(true)} alt="bus"/>
           {showBusExplanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox}>
@@ -36,14 +36,14 @@ export default function Content3() {
                  trips, they require the production and maintenance of bicycles and infrastructure, 
                  which can have a carbon footprint.</p>
                 
-                <Image className={styles.moving_bus} src={BusNoBg} width={190} height={75}/>
+                <Image className={styles.moving_bus} src={BusNoBg} width={190} height={75} alt="bus"/>
                 </div>
               </div>
             </div>
           )}
         </div>
         <div className={styles.imageContainer}>
-          <Image src={Meat} width={125} height={110} onClick={() => setShowMeatExplanation(true)} />
+          <Image src={Meat} width={125} height={110} onClick={() => setShowMeatExplanation(true)} alt="meat"/>
           {showMeatExplanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox}>
@@ -55,14 +55,14 @@ export default function Content3() {
                     to a plant-based diet can help reduce your carbon footprint.
                     consider reducing your meat consumption by incorporating more vegetarian or vegan meals into your diet. 
                     You could start with one or two meals a week and gradually increase from there.</p>
-                <Image className={styles.food} src={Food} width={160} height={85}/>
+                <Image className={styles.food} src={Food} width={160} height={85} alt="food"/>
                 </div>
               </div>
             </div>
           )}
         </div>
         <div className={styles.imageContainer}>
-          <Image src={Tree} width={125} height={110} onClick={() => setShowTreeExplanation(true)} />
+          <Image src={Tree} width={125} height={110} onClick={() => setShowTreeExplanation(true)} alt="tree"/>
           {showTreeExplanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox}>
@@ -73,14 +73,14 @@ export default function Content3() {
                     or supporting reforestation efforts can help reduce your carbon footprint.
                     In addition to absorbing carbon dioxide, trees provide a number of other important environmental benefits, such as preventing soil erosion, 
                     supporting biodiversity, and improving air quality.</p>
-                <Image className={styles.plants} src={PlantsNoBg} width={290} height={130}/>
+                <Image className={styles.plants} src={PlantsNoBg} width={290} height={130} alt="plant"/>
                 </div>
               </div>
             </div>
           )}
         </div>
         <div className={styles.imageContainer}>
-          <Image src={Cup} width={125} height={110} onClick={() => setShowCupExplanation(true)} />
+          <Image src={Cup} width={125} height={110} onClick={() => setShowCupExplanation(true)} alt="cup"/>
           {showCupExplanation && (
             <div className={styles.overlay}>
               <div className={styles.explanationBox}>
@@ -91,7 +91,7 @@ export default function Content3() {
                     or supporting reforestation efforts can help reduce your carbon footprint.
                     In addition to absorbing carbon dioxide, trees provide a number of other important environmental benefits, such as preventing soil erosion, 
                     supporting biodiversity, and improving air quality.</p>
-                <Image className={styles.cups} src={CupNoBg} width={150} height={140}/>
+                <Image className={styles.cups} src={CupNoBg} width={150} height={140} alt="cups"/>
                 </div>
               </div>
             </div>

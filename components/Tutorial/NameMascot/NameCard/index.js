@@ -66,14 +66,14 @@ export default function NameCard() {
                         <div className={styles.btn__l__disabled}>
                             <button className={styles.btn__l__disabled}
                                 type="submit" onClick={() => showError()}>
-                                Confirm
+                                CONFIRM
                             </button>
                         </div>
                     ) : (
                         <div className={styles.btn__l}><Link href="/name">
                         <button className={styles.btn__l}
                             type="submit" onClick={() => CheckLogin()}>
-                            Confirm
+                            CONFIRM
                         </button>
                     </Link></div>
                     )

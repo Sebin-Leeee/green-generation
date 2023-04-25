@@ -51,7 +51,8 @@ export default function LearningComplete() {
               <Component />
               <Image className={styles.mascot_style}
                 src={mascot}
-                width={200} />
+                width={200}
+                alt='mascot' />
          
               <div className={styles.buttons}>
                 <StartQuizBtn />

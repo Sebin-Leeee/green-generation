@@ -15,7 +15,8 @@ export default function NavBarHome() {
                       <Link href="/homepage"><Image src={homeIcon}
                           alt={homeIcon}
                           width={30}
-                          height={26} /></Link>
+                          height={26}
+                         /></Link>
                       <Link href="/homepage">Home</Link>
                   </li>
 

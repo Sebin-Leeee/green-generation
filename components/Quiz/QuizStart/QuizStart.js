@@ -19,7 +19,6 @@ export default function QuizStart({
                         <div className={styles.question__triangle}><span></span></div>
                         <div className={styles.question__dialog}>
                             <p className={styles.question__dialog__reg}>
-                                Welcome to the Green Generation Quiz!
                                 <span>Robotor</span>has just presented you with a challenge to see who lives a healthier lifestyle.
                             </p>
                         </div>
@@ -27,7 +26,7 @@ export default function QuizStart({
 
                     <div className={styles.question__reg}>
                         <p className={styles.question__dialog__reg}>
-                            Achieve high scores in three missions to prove that you have a healthy lifestyle!
+                            Achieve high scores in three missions and redeem rewards at shop!
                         </p>
                     </div>
                     <div className={styles.btn__container}>

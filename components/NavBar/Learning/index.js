@@ -41,7 +41,8 @@ export default function NavBarLearning() {
                           src={moreIcon}
                           alt={moreIcon}
                           width={35}
-                          height={9} /></Link>
+                          height={9} 
+                          /></Link>
                       <Link href="/more">More</Link>
                   </li>
               </ul>
