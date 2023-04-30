@@ -12,6 +12,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Homepage() {
+  console.log("App Name:"+ process.env.NEXT_PUBLIC_APP_NAME)
   const router = useRouter();
   const { rewardRedeemed } = router.query;
   const [redeemed, setRedeemed] = useState(false);
