@@ -23,7 +23,7 @@ export default function Accordion(
                     !isActive && id === 1 && <div className={styles.help__box}>
 
                         <div className={styles.help__box__item}>
-                            <Image src="/mascot-help.png" width={80} height={80} alt="mascot help"></Image>
+                            <Image src="Mascot-Help.png" width={80} height={80} alt="mascot help"></Image>
 
                             <span className={styles.greenie}>Click here! Greenie can help!</span>
                         </div>
