@@ -66,7 +66,7 @@ export default function Quiz() {
           {submitted && (
             <div className={styles.btn__container}><button className={styles.btn__l} onClick={() => handleRestart()} >RESTART</button>
             <Link href="learning"> <button className={styles.btn__l__org} onClick={() => handleRestart()} >REVIEW LEARNING</button></Link>
-            <Link href="shop">SHOP</Link>
+  
            </div>
 
 

@@ -25,10 +25,11 @@ export default function SelectedAnswer( {answerID}) {
                     answerID == 1 && (
 
                         <div className={styles.box}>
-                            <h3>
-                            Your answer: 
-                            </h3>
+                           
                             <p className={styles.desc}>
+                            <span>
+                            Your answer: 
+                            </span>
                                 {getSelectedAnswer(firQuestion.id)?.text}<br />
                             </p>
                         </div>
@@ -40,10 +41,10 @@ export default function SelectedAnswer( {answerID}) {
                     answerID == 2 && (
 
                         <div className={styles.box}>
-                        <h3>
-                        Your answer: 
-                        </h3>
-                        <p className={styles.desc}>
+                         <p className={styles.desc}>
+                            <span>
+                            Your answer: 
+                            </span>
                             {getSelectedAnswer(secQuestion.id)?.text}<br />
                         </p>
                     </div>
@@ -56,10 +57,10 @@ export default function SelectedAnswer( {answerID}) {
                     answerID == 3 && (
 
                         <div className={styles.box}>
-                        <h3>
-                        Your answer: 
-                        </h3>
-                        <p className={styles.desc}>
+                         <p className={styles.desc}>
+                            <span>
+                            Your answer: 
+                            </span>
                             {getSelectedAnswer(thQuestion.id)?.text}<br />
                         </p>
                     </div>

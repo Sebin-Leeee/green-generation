@@ -1,5 +1,9 @@
 .box{
-    padding-bottom: 1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+.box span{
+    font-weight: bold; 
+    margin-right: 0.4rem;
 }
 .box h3{
     padding-bottom: 0.5rem;

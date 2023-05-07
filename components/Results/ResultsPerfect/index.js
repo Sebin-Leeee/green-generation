@@ -5,8 +5,8 @@ import Image from 'next/image';
 import SelectedAnswer from '../SelectedAnswer';
 import lottie from 'lottie-web';
 import { createRef, useEffect } from 'react';
-
-
+import AccordionPerfect from '@/components/Accordian/AccordianPerfect';
+import Link from 'next/link';
 export default function ResultsPerfect() {
 
     let animationContainer = createRef();
@@ -19,7 +19,7 @@ export default function ResultsPerfect() {
             renrender: "svg",
             loop: true,
             autoplay: true,
-            path: "/animation/Map.json",
+            path: "/animation/congrat.json",
 
         });
 
@@ -43,9 +43,9 @@ export default function ResultsPerfect() {
 
         return () => {
             anim.destroy(),
-            anim2.destroy(),
-            anim3.destroy()
-        
+                anim2.destroy(),
+                anim3.destroy()
+
         };
     }, [])
 
@@ -60,7 +60,8 @@ export default function ResultsPerfect() {
 
                 <header className={styles.title}>
                     <div className={styles.title_box}>
-                        <h1 className={styles.title}> Congratulations!! <br /> You got a perfect score!</h1>
+                        <h1 className={styles.title}> CONGRATULATIONS!! </h1>
+                        <p>You got perfect score!</p>
                     </div>
 
                     <div className={styles.star_box}>
@@ -69,50 +70,47 @@ export default function ResultsPerfect() {
                 </header>
 
                 <div className={styles.results_box}>
-
-                <div className={styles.animation_container} ref={animationContainer} />
-
-                    <div className={styles.question_box}>
-                    <SelectedAnswer answerID={1}/>
-                        <h3 className={styles.heading}>1. Traveling To A Cafe</h3>
-                        <p className={styles.desc}>
-                        Taking transit is one of the best ways to reduce your carbon footprint as it encourages society to drive less.
-                            <br /> It also allows you to get some cardio in and a breathe of fresh air!
-                        </p>
-
-
+                   
+                    <div className={styles.animation}>
+                        <div className={styles.animation_container} ref={animationContainer} />
+                        <p>Shop is now open!</p>
+                        <Link href="shop"> <button className={styles.btn}>Shop</button></Link>
                     </div>
-
-                    <div className={styles.question_box}>
-                    <SelectedAnswer answerID={2}/>
-                        <h3 className={styles.heading}>2. Choosing Your Cup</h3>
-                        <p className={styles.desc}>
-                            Owning your own bottle will reduce waste compared to one-time use bottles/cups.
-                            <br /> Having a reusable bottle is one the most effective strategies to cutting waste in landfills.
-                        </p>
-                    </div>
-
-                    <div className={styles.animation_container2} ref={animationContainer2} />
-
-                    <div className={styles.question_box}>
-                    <SelectedAnswer answerID={3}/>
-                        <h3 className={styles.heading}>3. Getting Fruit From The Store</h3>
-                        <p className={styles.desc}>
-                            Getting food from the local market is one of best ways to reduce your carbon footprint.
-                            <br /> Food has to travel less distance to get delivered to your city.
-                        </p>
-                    </div>
-
-                    <div className={styles.animation_container3} ref={animationContainer3} />
                     
+                    <div className={styles.box}>
+                        <AccordionPerfect
+                            heading={"1. Traveling To A Cafe"}
+                            answerID={1}
+                            id={1}
+                        />
+
+                    </div>
+                    <div className={styles.box}>
+                        <AccordionPerfect
+                            heading={"2. Choosing Your Cup"}
+                            answerID={2}
+                            id={2}
+                        />
+
+                    </div>
+                    <div className={styles.box}>
+                        <AccordionPerfect
+                            heading={"3. Getting Fruit From Store"}
+                            answerID={3}
+                            id={3}
+                        />
+
+                    </div>
+
+
+
                 </div>
 
-                
 
 
             </main>
 
-            <NavBarQuiz/>
+            <NavBarQuiz />
 
 
         </>

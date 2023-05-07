@@ -2,10 +2,10 @@ import styles from '@/components/Results/ResultsImprove/Resultsimprove.module.cs
 import TopBar from '@/components/TopBar';
 import NavBarQuiz from '@/components/NavBar/Quiz';
 import Image from 'next/image';
-import SelectedAnswer from '../SelectedAnswer';
+import Accordion from '@/components/Accordian';
 import lottie from 'lottie-web';
 import { createRef, useEffect } from 'react';
-
+import Link from 'next/link';
 
 export default function Resultsimprove() {
 
@@ -61,7 +61,8 @@ export default function Resultsimprove() {
 
                 <header className={styles.title}>
                     <div className={styles.title_box}>
-                        <h1 className={styles.title}> You Can Do Better!! <br /> Try Visiting the Learning Tab!</h1>
+                        <h1 className={styles.title}> YOU CAN DO BETTER </h1>
+                        <Link href="learning"><p>Click here to learn again!</p></Link>
                     </div>
 
                     <div className={styles.star_box}>
@@ -69,43 +70,39 @@ export default function Resultsimprove() {
                     </div>
                 </header>
 
-                <div className={styles.results_box} >
+                <div className={styles.results_box}>
+                    <div className={styles.box}>
+                        <Accordion
+                            heading={"1. Traveling To A Cafe"}
+                            option1={"A typical vehicle emits about 4.6 metric tons of carbon dioxide every year!"}
+                            option2={"Do you know buiding a parking for shared bike actually produce emit high carbon emissions?"}
+                            answerID={1}
+                            id={1}
+                        />
 
-                    <div className={styles.animation_container} ref={animationContainer} />
+                    </div>
+                    <div className={styles.box}>
+                        <Accordion
+                            heading={"2. Choosing Your Cup"}
+                            option1={"1.6 billion plastic cups are thrown away in Canada every year."}
+                            option2={"Do you know buiding a parking for shared bike actually produce emit high carbon emissions?"}
+                            answerID={2}
+                            id={2}
+                        />
 
-
-                    <div className={styles.question_box}>
-                        <SelectedAnswer answerID={1} />
-                        <h3 className={styles.heading}>1. Traveling To A Cafe</h3>
-                        <p className={styles.desc}>
-                            By taking a taxi to your destintions, you are contributing to more carbon emissions than necessary.
-                            <br /> There are other ways to reduce your carbon footprint, even if a ride is more convenient.
-                        </p>
-
+                    </div>
+                    <div className={styles.box}>
+                        <Accordion
+                            heading={"3. Getting Fruit From Store"}
+                            option1={"Food transport was responsible for 6% of global emissions"}
+                            option2={"CO2 emissions from most plant-based products are as much as 10-50 times lower than most animal-based products."}
+                            answerID={3}
+                            id={3}
+                        />
 
                     </div>
 
-                    <div className={styles.question_box}>
-                        <SelectedAnswer answerID={2} />
-                        <h3 className={styles.heading}>2. Choosing Your Cup</h3>
-                        <p className={styles.desc}>
-                            By choosing to use plastic over other alternatives you are adding more waste to landfills.
-                            <br /> Remember to reduce and reuse!
-                        </p>
-                    </div>
 
-                    <div className={styles.animation_container2} ref={animationContainer2} />
-
-                    <div className={styles.question_box}>
-                        <SelectedAnswer answerID={3} />
-                        <h3 className={styles.heading}>3. Getting Fruit From The Store</h3>
-                        <p className={styles.desc}>
-                            Food that travels long distances can contribute to more carbon emissions and increase your footprint.
-                            <br /> It's best to think locally.
-                        </p>
-                    </div>
-
-                    <div className={styles.animation_container3} ref={animationContainer3} />
 
                 </div>
 
