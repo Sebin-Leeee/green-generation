@@ -38,6 +38,12 @@
        }
 }
 
+.animation_container{
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+}
+
 .help__box{
     width: 320px;
     padding: 0.5rem;

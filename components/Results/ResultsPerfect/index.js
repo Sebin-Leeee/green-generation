@@ -70,19 +70,24 @@ export default function ResultsPerfect() {
                 </header>
 
                 <div className={styles.results_box}>
-                   
+
                     <div className={styles.animation}>
                         <div className={styles.animation_container} ref={animationContainer} />
                         <p>Shop is now open!</p>
                         <Link href="shop"> <button className={styles.btn}>Shop</button></Link>
                     </div>
-                    
+
                     <div className={styles.box}>
                         <AccordionPerfect
                             heading={"1. Traveling To A Cafe"}
                             answerID={1}
                             id={1}
                         />
+                        <div className={styles.greenie_robotor}>
+                            <Image src="/Mascot-Help.png" width={80} height={80} alt="mascot help"></Image>
+                            <span>Thank you for making a <br /> difference in our world!!</span>
+                        </div>
+
 
                     </div>
                     <div className={styles.box}>
@@ -91,6 +96,11 @@ export default function ResultsPerfect() {
                             answerID={2}
                             id={2}
                         />
+
+                        <div className={styles.greenie_robotor}>
+                        <Image src="/Quiz/2.png" width={80} height={80} alt="Robotor help"></Image>
+                            <span>We are in this together, <br /> one step at a time.</span>
+                        </div>
 
                     </div>
                     <div className={styles.box}>

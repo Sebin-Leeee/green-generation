@@ -75,7 +75,7 @@ export default function Resultsimprove() {
                         <Accordion
                             heading={"1. Traveling To A Cafe"}
                             option1={"A typical vehicle emits about 4.6 metric tons of carbon dioxide every year!"}
-                            option2={"Do you know buiding a parking for shared bike actually produce emit high carbon emissions?"}
+                            option2={"The increase of greenhouse gases causes heat to become trapped within the atomsphere."}
                             answerID={1}
                             id={1}
                         />
@@ -85,7 +85,7 @@ export default function Resultsimprove() {
                         <Accordion
                             heading={"2. Choosing Your Cup"}
                             option1={"1.6 billion plastic cups are thrown away in Canada every year."}
-                            option2={"Do you know buiding a parking for shared bike actually produce emit high carbon emissions?"}
+                            option2={"We produce 30% more trash during November-December than during the rest of the year."}
                             answerID={2}
                             id={2}
                         />

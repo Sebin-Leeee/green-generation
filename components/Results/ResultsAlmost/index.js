@@ -82,7 +82,7 @@ export default function ResultsAlmost() {
                         <Accordion
                             heading={"2. Choosing Your Cup"}
                             option1={"1.6 billion plastic cups are thrown away in Canada every year."}
-                            option2={"Do you know buiding a parking for shared bike actually produce emit high carbon emissions?"}
+                            option2={"Garbage is the number one wildlife attractant in residential areas."}
                             answerID={2}
                             id={2}
                         />
