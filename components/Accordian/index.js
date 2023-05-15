@@ -39,7 +39,7 @@ export default function Accordion(
                 renderer: "svg",
                 loop: false,
                 autoplay: true,
-                path: "/animation/Cup.json",
+                path: "/animation/cup1.json",
               });
               break;
             case 3:
