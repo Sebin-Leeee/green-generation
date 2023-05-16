@@ -6,6 +6,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 2;
+}
+.moreButton{
   z-index: 1;
 }
 
@@ -21,7 +24,7 @@
     margin-bottom: 0px;
     position: absolute;
     top: 11%;
-    z-index: 2;
+    z-index: 3;
 }
 .character_container{
     display: flex;
@@ -85,5 +88,4 @@
     height: 1.5rem;
     width: 5rem;
     cursor: pointer;
-    z-index:5
 }
