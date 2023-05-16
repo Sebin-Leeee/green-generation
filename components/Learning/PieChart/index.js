@@ -1,8 +1,9 @@
-import React from 'react';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import React, { useEffect } from 'react';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
-import { styles } from './PieChart.module.css'
-ChartJS.register(ArcElement, Tooltip, Legend);
+import styles from './PieChart.module.css';
+
+ChartJS.register(ArcElement, Tooltip, Legend, Title);
 
 export const data = {
   labels: ['Transportation', 'Oil and gas', 'Buildings', 'Electricity', 'Agriculture', 'Waste and others'],
@@ -28,25 +29,28 @@ export const data = {
       ],
       borderWidth: 1,
     },
-  ], 
+  ],
 };
 
 export const chartOptions = {
-    plugins: {
-        legend: {
-            position: 'top'
-        },
-        title: {
-            display: true,
-            text: "Canada's Greenhouse Gas Emissions by Sector, 2019"
-        }
+  plugins: {
+    legend: {
+      position: 'top',
     },
-    maintainAspectRatio: false,
-    responsive: true
-}
+    title: {
+      display: true,
+      text: "Canada's Greenhouse Gas Emissions by Sector, 2019",
+      position: 'top',
+    },
+  },
+  maintainAspectRatio: false,
+  responsive: true,
+};
 
 export function PieChart() {
-  return <div className={styles}><Pie data={data} options={chartOptions} /></div>;
-}
+  useEffect(() => {
+    ChartJS.register(Title);
+  }, []);
 
-//https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/greenhouse-gas-emissions.html
+  return <div className={styles.chartContainer}><Pie data={data} options={chartOptions} /></div>;
+}
